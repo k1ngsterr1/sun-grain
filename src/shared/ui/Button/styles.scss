@@ -1,4 +1,19 @@
 .button {
   width: clamp(160px, 74.7648vw, 640px);
   height: clamp(27px, 12.61656vw, 108px);
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: clamp(2px, 0.93456vw, 8px);
+  border: none;
+  outline: none;
+  transition: 0.3s all;
+  @apply text-custom-white;
+  @apply bg-custom-orange;
+  &:hover {
+    background: #e5800c;
+  }
 }

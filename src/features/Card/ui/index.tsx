@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./styles.scss";
+
 interface CardProps {
   image: string;
   text: string;

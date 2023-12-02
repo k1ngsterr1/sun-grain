@@ -3,7 +3,9 @@
   padding: 20px;
   height: clamp(150px, 70.092vw, 600px);
   border-radius: 8px;
+  transition: 0.3s;
   @apply bg-white;
+  @apply shadow-md;
 
   &__image {
     width: 100%;
@@ -14,5 +16,11 @@
     font-size: 22px;
     font-family: "Noto Sans", sans-serif;
     @apply text-custom-black;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    @apply shadow-lg;
+    @apply bg-slate-100;
   }
 }

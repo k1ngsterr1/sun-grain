@@ -1,5 +1,9 @@
-import React from "react";
+import { MainScreen } from "@widgets/screens/Home/MainScreen/ui";
 
 export const HomePage = () => {
-  return <></>;
+  return (
+    <>
+      <MainScreen />
+    </>
+  );
 };
