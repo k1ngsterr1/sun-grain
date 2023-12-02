@@ -15,7 +15,25 @@
 
 body {
   min-height: 100vh;
+}
+
+h1 {
+  background: linear-gradient(180deg, #fcbf20, #e55b12);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-family: "Noctura", sans-serif;
+}
+
+p,
+.paragraph {
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 155%;
+  @apply text-custom-black;
 }
 
 .container {
