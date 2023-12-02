@@ -11,7 +11,7 @@ export const Card: React.FC<CardProps> = ({ image, text }) => {
   return (
     <div className="card">
       <img src={image} className="card__image" alt="card-image" />
-      <span className="card__text">{text}</span>
+      <span className="card__text w-[60%] mt-8">{text}</span>
     </div>
   );
 };

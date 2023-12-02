@@ -1,26 +1,32 @@
 .card {
-  width: 80%;
-  padding: 20px;
-  height: clamp(150px, 70.092vw, 600px);
+  width: 90%;
+  padding: clamp(10px, 4.6728vw, 40px);
+  height: clamp(225px, 105.13799999999999vw, 900px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 8px;
   transition: 0.3s;
-  @apply bg-white;
-  @apply shadow-md;
+  margin: auto;
+  @apply bg-gray-50;
+  @apply shadow-lg;
 
   &__image {
     width: 100%;
-    height: 200px;
+    height: clamp(140px, 65.41919999999999vw, 560px);
   }
 
   &__text {
-    font-size: 22px;
+    font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+    font-weight: 500;
     font-family: "Noto Sans", sans-serif;
+    @apply text-center;
     @apply text-custom-black;
     transition: 0.3s;
   }
 
   &:hover {
-    @apply shadow-lg;
+    @apply shadow-xl;
     @apply bg-slate-100;
   }
 }
