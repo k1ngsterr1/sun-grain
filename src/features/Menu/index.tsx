@@ -12,6 +12,11 @@ export const Menu = () => {
   return (
     <div className="menu flex flex-col items-end">
       <div className="menu__links flex flex-col items-end">
+        <ScrollLink className="menu__links__link" to="main">
+          Главная
+        </ScrollLink>
+      </div>
+      <div className="menu__links flex flex-col items-end">
         <ScrollLink className="menu__links__link" to="catalogue">
           Каталог
         </ScrollLink>
@@ -33,6 +38,17 @@ export const Menu = () => {
           О нас
         </ScrollLink>
       </div>
+      <div className="menu__links flex flex-col items-end">
+        <ScrollLink className="menu__links__link" to="contacts">
+          Контакты
+        </ScrollLink>
+      </div>
+      <a href="tel:+77066018826" className="menu__links__contact">
+        +7 706 601 88-26
+      </a>
+      <a href="mailto:ceo@sungrain.kz" className="menu__links__contact">
+        ceo@sungrain.kz
+      </a>
     </div>
   );
 };
