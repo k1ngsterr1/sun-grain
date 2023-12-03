@@ -6,13 +6,14 @@ import "./styles.scss";
 export const Logo = () => {
   const navigate = useNavigate();
 
-  function navigateToMain() {
-    navigate("/");
+  function scrollToTop() {
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+    navigate("/home");
   }
 
   return (
     <>
-      <img onClick={navigateToMain} src={logo} alt="logo" className="logo" />
+      <img onClick={scrollToTop} src={logo} alt="logo" className="logo" />
     </>
   );
 };

@@ -3,6 +3,9 @@ import { Header } from "@features/Header/ui";
 import { Button } from "@shared/ui/Button/";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Slide } from "react-awesome-reveal";
+import { Menu } from "@features/Menu";
+import { RootState } from "@redux/store";
+import { useSelector } from "react-redux";
 
 import image from "@assets/images/flavor.webp";
 import "./styles.scss";
@@ -13,9 +16,12 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export const MainScreen = () => {
+  const isMenuOpen = useSelector((state: RootState) => state.menu.isOpen);
+
   return (
     <>
       <Header />
+      {isMenuOpen && <Menu />}
       <main className="container">
         <Slide>
           <h1>SUN GRAIN</h1>

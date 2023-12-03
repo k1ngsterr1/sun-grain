@@ -7,19 +7,28 @@
   background-color: white;
 
   &__links {
+    @apply pr-8;
     &__link {
       font-family: Noto Sans;
-      font-size: 24px;
-      @apply bg-custom-orange;
+      font-weight: 700;
+      font-size: clamp(16px, 7.47648vw, 64px);
+      @apply text-custom-orange;
     }
 
-    &__contacts {
-      font-family: Noto Sans;
-      font-size: 24px;
-      background: linear-gradient(180deg, #fcbf20, #e55b12);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+    &__sub-link {
+      font-weight: 400;
+      font-size: clamp(9px, 4.20552vw, 36px);
+      @apply text-custom-black;
     }
+  }
+
+  &__contact {
+    font-family: Noto Sans;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    background: linear-gradient(180deg, #fcbf20, #e55b12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    @apply pr-8;
   }
 }
