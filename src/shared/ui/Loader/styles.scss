@@ -1,0 +1,38 @@
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  //   animation: disappear 1.5s;
+  @apply bg-custom-orange;
+
+  &__logo {
+    width: clamp(100px, 46.727999999999994vw, 400px);
+    height: clamp(100px, 46.727999999999994vw, 400px);
+  }
+
+  &__text {
+    color: white;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    font-family: Noto Sans;
+  }
+}
+
+// @keyframes disappear {
+//   from {
+//     transform: scale(1);
+//   }
+//   to {
+//     transform: scale(1.2);
+//   }
+// }
+
+// @keyframes disappear {
+//   from {
+//     opacity: 1;
+//   }
+//   to {
+//     opacity: 0;
+//   }
+// }
