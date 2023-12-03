@@ -4,6 +4,9 @@
   display: flex;
   position: fixed;
   z-index: 10;
+  //   background-image: url("../../assets/images/bg_image.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: white;
 
   &__links {
