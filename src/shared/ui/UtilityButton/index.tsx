@@ -16,7 +16,7 @@ export const UtilityButton: React.FC<UtilityButtonProps> = ({
   onClick,
 }) => {
   return (
-    <button onClick={onClick} className={`utility-btn--${type} ${width}`}>
+    <button onClick={onClick} className={`utility-btn--${type} w-[${width}]`}>
       {text}
     </button>
   );

@@ -1,0 +1,12 @@
+.category-tab {
+  position: absolute;
+  padding-top: clamp(3px, 1.40184vw, 12px);
+  padding-bottom: clamp(3px, 1.40184vw, 12px);
+  padding-left: clamp(8px, 3.73824vw, 32px);
+  padding-right: clamp(8px, 3.73824vw, 32px);
+  border-radius: clamp(10px, 4.6728vw, 40px);
+  top: clamp(13.5px, 6.30828vw, 54px);
+  right: clamp(13.5px, 6.30828vw, 54px);
+  @apply text-custom-orange;
+  background-color: #f8c4a7;
+}
