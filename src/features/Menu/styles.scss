@@ -15,10 +15,10 @@
       font-family: Noto Sans;
       font-weight: 700;
       font-size: clamp(16px, 7.47648vw, 64px);
+      transition: 0.3s all;
       @apply text-custom-orange;
-
-      &__icon {
-        font-size: 22px;
+      &:hover {
+        color: #d4760b;
       }
     }
 

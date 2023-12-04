@@ -1,0 +1,18 @@
+.feature {
+  width: 200px;
+  height: 200px;
+  padding: clamp(10px, 4.6728vw, 40px);
+  border-radius: clamp(4.5px, 2.10276vw, 18px);
+  @apply bg-white;
+  @apply shadow-lg;
+
+  &__icon {
+    font-size: clamp(45px, 21.0276vw, 180px);
+    @apply text-custom-orange;
+  }
+
+  &__text {
+    font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+    @apply text-custom-black;
+  }
+}

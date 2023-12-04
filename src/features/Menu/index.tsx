@@ -1,16 +1,8 @@
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
 import { Menu as DropMenu } from "@headlessui/react";
 import { Slide } from "react-awesome-reveal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import {
-  faC,
-  faChevronDown,
-  faChevronUp,
-} from "@fortawesome/free-solid-svg-icons";
 
 import "./styles.scss";
 
@@ -29,7 +21,7 @@ export const Menu = () => {
   return (
     <>
       <Slide direction="right" className="z-10 absolute w-full h-full">
-        <div className="menu flex flex-col items-end">
+        <div className="menu flex flex-col items-end mt-16">
           <Slide direction="right" delay={100}>
             <div className="menu__links flex flex-col items-end mt-6">
               <ScrollLink className="menu__links__link" to="main">
@@ -148,21 +140,29 @@ export const Menu = () => {
             </DropMenu>
           </div>
           <div className="menu__links flex flex-col items-end mt-6">
-            <ScrollLink className="menu__links__link" to="catalogue">
-              О нас
-            </ScrollLink>
+            <Slide direction="right" delay={400}>
+              <ScrollLink className="menu__links__link" to="catalogue">
+                О нас
+              </ScrollLink>
+            </Slide>
           </div>
           <div className="menu__links flex flex-col items-end mt-6">
-            <ScrollLink className="menu__links__link" to="contacts">
-              Контакты
-            </ScrollLink>
+            <Slide direction="right" delay={500}>
+              <ScrollLink className="menu__links__link" to="contacts">
+                Контакты
+              </ScrollLink>
+            </Slide>
           </div>
-          <a href="tel:+77066018826" className="menu__contact">
-            +7 706 601 88-26
-          </a>
-          <a href="mailto:ceo@sungrain.kz" className="menu__contact mt-4">
-            ceo@sungrain.kz
-          </a>
+          <Slide direction="right" className="mt-6" delay={600}>
+            <a href="tel:+77066018826" className="menu__contact">
+              +7 706 601 88-26
+            </a>
+          </Slide>
+          <Slide direction="right" className="mt-6" delay={700}>
+            <a href="mailto:ceo@sungrain.kz" className="menu__contact mt-4">
+              ceo@sungrain.kz
+            </a>
+          </Slide>
         </div>
       </Slide>
     </>

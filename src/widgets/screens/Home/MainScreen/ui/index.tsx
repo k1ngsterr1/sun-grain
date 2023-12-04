@@ -23,15 +23,15 @@ export const MainScreen = () => {
       <Header />
       {isMenuOpen && <Menu />}
       <main className="container">
-        <Slide>
+        <Slide triggerOnce>
           <h1>SUN GRAIN</h1>
         </Slide>
-        <Slide direction="right">
+        <Slide direction="right" triggerOnce>
           <p className="paragraph text-center">
             Ваш Надежный Партнер в Поставке Качественной Продукции
           </p>
         </Slide>
-        <Slide direction="up" className="w-full">
+        <Slide direction="up" className="w-full" triggerOnce>
           <Swiper
             className="swiper flex items-center justify-center mt-6"
             slidesPerView={1}
@@ -51,7 +51,7 @@ export const MainScreen = () => {
             </SwiperSlide>
           </Swiper>
         </Slide>
-        <Slide direction="up" delay={500}>
+        <Slide direction="up" delay={500} triggerOnce>
           <Button text="Вся продукция" margin="mt-6" />
         </Slide>
       </main>

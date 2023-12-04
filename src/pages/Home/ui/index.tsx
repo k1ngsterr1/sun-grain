@@ -1,4 +1,5 @@
 import { MainScreen } from "@widgets/screens/Home/MainScreen/ui";
+import { AboutScreen } from "@widgets/screens/Home/AboutScreen/ui";
 import { Loader } from "@shared/ui/Loader";
 import { useLoading } from "@shared/lib/hooks/useLoader";
 
@@ -12,6 +13,7 @@ export const HomePage = () => {
   return (
     <>
       <MainScreen />
+      <AboutScreen />
     </>
   );
 };
