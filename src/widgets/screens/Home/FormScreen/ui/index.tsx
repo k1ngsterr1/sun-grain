@@ -1,3 +1,4 @@
+import { Form } from "@widgets/Form/ui";
 import "./styles.scss";
 
 export const FormScreen = () => {
@@ -8,6 +9,7 @@ export const FormScreen = () => {
         С собственным производством и отлаженной логистикой, мы способны
         оперативно удовлетворять запросы наших клиентов.
       </p>
+      <Form />
     </div>
   );
 };

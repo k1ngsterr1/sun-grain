@@ -1,5 +1,5 @@
 .input {
-  width: 90%;
+  width: 80%;
   height: clamp(27.5px, 12.8502vw, 110px);
   text-align: center;
   font-family: Noto Sans;
@@ -8,6 +8,14 @@
   font-weight: 300;
   line-height: normal;
   border: 2px solid;
-  @apply pl-4;
+  outline: none;
+  background: transparent;
+  @apply text-custom-black;
   @apply border-custom-black;
+  transition: 0.3s all;
+
+  //   &:focus {
+  //     color: #fbddbb;
+  //     border: 2px solid #fbddbb;
+  //   }
 }
