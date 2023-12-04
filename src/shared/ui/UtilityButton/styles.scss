@@ -1,0 +1,32 @@
+.utility-btn {
+  padding-top: clamp(6px, 2.80368vw, 24px);
+  padding-left: clamp(6px, 2.80368vw, 24px);
+  padding-right: clamp(16px, 7.47648vw, 64px);
+  padding-left: clamp(16px, 7.47648vw, 64px);
+  @apply text-custom-orange;
+  transition: 0.3s all;
+
+  &--filled {
+    padding-top: clamp(6px, 2.80368vw, 24px);
+    padding-left: clamp(6px, 2.80368vw, 24px);
+    padding-right: clamp(16px, 7.47648vw, 64px);
+    padding-left: clamp(16px, 7.47648vw, 64px);
+    @apply text-white;
+    @apply bg-custom-orange;
+    transition: 0.3s all;
+
+    &:hover {
+      @apply bg-orange-600;
+    }
+  }
+  &--neutral {
+    padding: 20px;
+    @apply text-custom-orange;
+    @apply bg-gray-200;
+    transition: 0.3s all;
+
+    &:hover {
+      @apply bg-orange-600;
+    }
+  }
+}

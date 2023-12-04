@@ -1,6 +1,6 @@
 .feature {
-  width: 200px;
-  height: 200px;
+  width: clamp(100px, 46.727999999999994vw, 400px);
+  height: clamp(100px, 46.727999999999994vw, 400px);
   padding: clamp(10px, 4.6728vw, 40px);
   border-radius: clamp(4.5px, 2.10276vw, 18px);
   @apply bg-white;
