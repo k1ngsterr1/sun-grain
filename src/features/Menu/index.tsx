@@ -1,16 +1,29 @@
+import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Menu as DropMenu } from "@headlessui/react";
 import { Slide } from "react-awesome-reveal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faC,
+  faChevronDown,
+  faChevronUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 import "./styles.scss";
 
 export const Menu = () => {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
 
   function navigateTo(url: string) {
     navigate(url);
+  }
+
+  function openCatalogue() {
+    setIsOpen(!isOpen);
   }
 
   return (
@@ -27,12 +40,15 @@ export const Menu = () => {
           <div className="menu__links flex flex-col items-end mt-6">
             <DropMenu>
               <Slide delay={300} direction="right">
-                <DropMenu.Button className={"menu__links__link"}>
-                  Каталог
+                <DropMenu.Button
+                  className={"menu__links__link"}
+                  onClick={openCatalogue}
+                >
+                  Каталог{" "}
                 </DropMenu.Button>
               </Slide>
               <DropMenu.Items className={"flex flex-col items-end"}>
-                <Slide delay={100} direction="right" className="mt-3">
+                <Slide direction="right" className="mt-3">
                   <DropMenu.Item>
                     {({ active }) => (
                       <Link
@@ -44,36 +60,90 @@ export const Menu = () => {
                     )}
                   </DropMenu.Item>
                 </Slide>
-                <DropMenu.Item>
-                  {({ active }) => (
-                    <Link
-                      className={`menu__links__sub-link mt-2`}
-                      to={"/catalogue"}
-                    >
-                      Гречка
-                    </Link>
-                  )}
-                </DropMenu.Item>
-                <DropMenu.Item>
-                  {({ active }) => (
-                    <Link
-                      className={`menu__links__sub-link mt-2`}
-                      to={"/catalogue"}
-                    >
-                      Отруби пшеничные
-                    </Link>
-                  )}
-                </DropMenu.Item>
-                <DropMenu.Item>
-                  {({ active }) => (
-                    <Link
-                      className={`menu__links__sub-link mt-2`}
-                      to={"/catalogue"}
-                    >
-                      Отруби пшеничные
-                    </Link>
-                  )}
-                </DropMenu.Item>
+                <Slide direction="right" className="mt-3">
+                  <DropMenu.Item>
+                    {({ active }) => (
+                      <Link
+                        className={`menu__links__sub-link mt-2`}
+                        to={"/catalogue"}
+                      >
+                        Гречка
+                      </Link>
+                    )}
+                  </DropMenu.Item>
+                </Slide>
+                <Slide direction="right" className="mt-3">
+                  <DropMenu.Item>
+                    {({ active }) => (
+                      <Link
+                        className={`menu__links__sub-link mt-2`}
+                        to={"/catalogue"}
+                      >
+                        Крупа горох колотый
+                      </Link>
+                    )}
+                  </DropMenu.Item>
+                </Slide>
+                <Slide direction="right" className="mt-3">
+                  <DropMenu.Item>
+                    {({ active }) => (
+                      <Link
+                        className={`menu__links__sub-link mt-2`}
+                        to={"/catalogue"}
+                      >
+                        Отруби пшеничные
+                      </Link>
+                    )}
+                  </DropMenu.Item>
+                </Slide>
+                <Slide direction="right" className="mt-3">
+                  <DropMenu.Item>
+                    {({ active }) => (
+                      <Link
+                        className={`menu__links__sub-link mt-2`}
+                        to={"/catalogue"}
+                      >
+                        Крупо перловая
+                      </Link>
+                    )}
+                  </DropMenu.Item>
+                </Slide>
+                <Slide direction="right" className="mt-3">
+                  <DropMenu.Item>
+                    {({ active }) => (
+                      <Link
+                        className={`menu__links__sub-link mt-2`}
+                        to={"/catalogue"}
+                      >
+                        Крупа манная
+                      </Link>
+                    )}
+                  </DropMenu.Item>
+                </Slide>
+                <Slide direction="right" className="mt-3">
+                  <DropMenu.Item>
+                    {({ active }) => (
+                      <Link
+                        className={`menu__links__sub-link mt-2`}
+                        to={"/catalogue"}
+                      >
+                        Геркулес
+                      </Link>
+                    )}
+                  </DropMenu.Item>
+                </Slide>
+                <Slide direction="right" className="mt-3">
+                  <DropMenu.Item>
+                    {({ active }) => (
+                      <Link
+                        className={`menu__links__sub-link mt-2`}
+                        to={"/catalogue"}
+                      >
+                        Крупа ячневая
+                      </Link>
+                    )}
+                  </DropMenu.Item>
+                </Slide>
               </DropMenu.Items>
             </DropMenu>
           </div>
