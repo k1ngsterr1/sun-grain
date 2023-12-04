@@ -35,13 +35,15 @@ h1 {
   font-family: "Noctura", sans-serif;
 }
 
-h2 {
+h2,
+h3 {
   @apply text-custom-black;
   font-family: Noto Sans;
   font-size: clamp(15px, 7.0092vw, 60px);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin: auto;
 }
 
 p,

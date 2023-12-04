@@ -38,21 +38,37 @@ export const MainScreen = () => {
             spaceBetween={64}
           >
             <SwiperSlide className="swiper__slide">
-              <Card text="Самая вкусная мука Sun Grain" image={image} />
+              <Card
+                text="Самая вкусная мука Sun Grain"
+                description="Лучшая мука в мире, покупайте у нас"
+                image={image}
+              />
             </SwiperSlide>
             <SwiperSlide className="swiper__slide">
-              <Card text="Самая вкусная мука Sun Grain" image={image} />
+              <Card
+                text="Самая вкусная мука Sun Grain"
+                description="Лучшая мука в мире, покупайте у нас"
+                image={image}
+              />
             </SwiperSlide>
             <SwiperSlide className="swiper__slide">
-              <Card text="Самая вкусная мука Sun Grain" image={image} />
+              <Card
+                text="Самая вкусная мука Sun Grain"
+                description="Лучшая мука в мире, покупайте у нас"
+                image={image}
+              />
             </SwiperSlide>
             <SwiperSlide className="swiper__slide">
-              <Card text="Самая вкусная мука Sun Grain" image={image} />
+              <Card
+                text="Самая вкусная мука Sun Grain"
+                description="Лучшая мука в мире, покупайте у нас"
+                image={image}
+              />
             </SwiperSlide>
           </Swiper>
         </Slide>
         <Slide direction="up" delay={500} triggerOnce>
-          <Button text="Вся продукция" margin="mt-6" />
+          <Button text="Вся продукция" margin="mt-10" />
         </Slide>
       </main>
     </>

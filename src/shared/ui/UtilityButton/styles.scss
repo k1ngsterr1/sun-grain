@@ -17,4 +17,32 @@
       @apply bg-orange-600;
     }
   }
+
+  &--filled-no-width {
+    padding: clamp(6px, 2.80368vw, 24px);
+    padding-left: clamp(12px, 5.60736vw, 48px);
+    padding-right: clamp(12px, 5.60736vw, 48px);
+    border-radius: 4px;
+    @apply text-white;
+    @apply bg-custom-orange;
+    transition: 0.3s all;
+
+    &:hover {
+      @apply bg-orange-600;
+    }
+  }
+
+  &--neutral {
+    padding: clamp(6px, 2.80368vw, 24px);
+    padding-left: clamp(12px, 5.60736vw, 48px);
+    padding-right: clamp(12px, 5.60736vw, 48px);
+    border-radius: 4px;
+    @apply text-custom-orange;
+    @apply bg-gray-200;
+    transition: 0.3s all;
+
+    &:hover {
+      @apply bg-gray-300;
+    }
+  }
 }

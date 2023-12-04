@@ -9,7 +9,7 @@
   border-radius: 8px;
   transition: 0.3s;
   margin: auto;
-  @apply bg-gray-50;
+  @apply bg-gray-100;
   @apply shadow-lg;
 
   &__image {
@@ -17,8 +17,14 @@
     height: clamp(140px, 65.41919999999999vw, 560px);
   }
 
+  &__description {
+    opacity: 0.5;
+    @apply text-gray-700;
+    text-align: center;
+  }
+
   &__text {
-    font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+    font-size: 23px;
     font-weight: 500;
     font-family: "Noto Sans", sans-serif;
     @apply text-center;

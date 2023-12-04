@@ -35,7 +35,7 @@ export const AboutScreen = () => {
           <Feature name="Качество" icon={faMagento} />
           <Feature name="Качество" icon={faMagento} />
         </div>
-        <img src={about} className="about-image mt-12" alt="about-image" />
+        <img src={about} className="about-image mt-12 mb-8" alt="about-image" />
       </div>
     </div>
   );

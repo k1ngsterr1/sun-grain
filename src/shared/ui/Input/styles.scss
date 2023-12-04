@@ -1,0 +1,12 @@
+.input {
+  width: 90%;
+  height: clamp(27.5px, 12.8502vw, 110px);
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: clamp(8px, 3.73824vw, 32px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: 2px solid;
+  @apply border-custom-black;
+}
