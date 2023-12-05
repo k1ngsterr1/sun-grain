@@ -7,13 +7,28 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: 0.3s all;
+}
+
+.filled {
+  @extend .button;
   border-radius: clamp(2px, 0.93456vw, 8px);
   border: none;
   outline: none;
-  transition: 0.3s all;
   @apply text-custom-white;
   @apply bg-custom-orange;
   &:hover {
     background: #e5800c;
+  }
+}
+
+.outline {
+  @extend .button;
+  color: white;
+  border: 1px solid white;
+  @apply text-custom-white;
+  &:hover {
+    @apply text-custom-orange;
+    background: white;
   }
 }

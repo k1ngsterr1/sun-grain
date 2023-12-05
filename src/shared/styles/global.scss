@@ -34,6 +34,11 @@ h1 {
   color: transparent;
   font-family: "Noctura", sans-serif;
 }
+input {
+  --tw-ring-offset-color: transparent !important;
+  --tw-ring-color: transparent !important;
+  --tw-ring-shadow: 0 0 #000 !important;
+}
 
 h2,
 h3 {

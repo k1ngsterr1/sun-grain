@@ -90,25 +90,7 @@ export const CatalogueScreen = () => {
         margin="mt-6"
         image={image}
       />
-      <Card
-        text="Самая вкусная мука Sun Grain"
-        description="Лучшая мука в мире, покупайте у нас"
-        margin="mt-6"
-        image={image}
-      />
-      <Card
-        text="Самая вкусная мука Sun Grain"
-        description="Лучшая мука в мире, покупайте у нас"
-        margin="mt-6"
-        image={image}
-      />
-      <Card
-        text="Самая вкусная мука Sun Grain"
-        description="Лучшая мука в мире, покупайте у нас"
-        margin="mt-6"
-        image={image}
-      />
-      <Button text="Весь каталог" margin="mt-8" />
+      <Button text="Весь каталог" margin="mt-8" buttonType="filled" />
     </div>
   );
 };

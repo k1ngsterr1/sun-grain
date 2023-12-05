@@ -68,7 +68,7 @@ export const MainScreen = () => {
           </Swiper>
         </Slide>
         <Slide direction="up" delay={500} triggerOnce>
-          <Button text="Вся продукция" margin="mt-10" />
+          <Button text="Вся продукция" margin="mt-10" buttonType="filled" />
         </Slide>
       </main>
     </>

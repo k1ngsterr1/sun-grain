@@ -10,12 +10,27 @@
   border: 2px solid;
   outline: none;
   background: transparent;
+    --tw-ring-offset-color: transparent
+  --tw-ring-color: transparent
+  --tw-ring-offset-shadow: transparent
   @apply text-custom-black;
   @apply border-custom-black;
   transition: 0.3s all;
 
-  //   &:focus {
-  //     color: #fbddbb;
-  //     border: 2px solid #fbddbb;
-  //   }
+  &::placeholder {
+    @apply text-custom-black;
+  }
+
+  &:focus{
+    color: white;
+    border: 2px solid white
+  }
+
+}
+
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+  --tw-ring-offset-color: none
+  --tw-ring-color: none`
+  --tw-ring-offset-shadow: none
 }
