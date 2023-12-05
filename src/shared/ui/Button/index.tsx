@@ -33,7 +33,7 @@ export const ScrollButton: React.FC<ScrollButtonProps> = ({
   buttonType,
 }) => {
   return (
-    <Link className={`button  ${margin} ${buttonType}`} to={to}>
+    <Link className={`button  ${margin} ${buttonType}`} to={to} smooth>
       {text}
     </Link>
   );

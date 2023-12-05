@@ -13,6 +13,9 @@
 
 .filled {
   @extend .button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   outline: none;
   @apply text-custom-white;
