@@ -7,7 +7,7 @@ import image from "@assets/images/flavor.webp";
 
 export const CatalogueScreen = () => {
   return (
-    <div className="container">
+    <div className="container" id="catalogue">
       <h2 className="second-heading mt-0 mb-8">Каталог</h2>
       <div className="w-full flex items-center justify-between">
         <Swiper

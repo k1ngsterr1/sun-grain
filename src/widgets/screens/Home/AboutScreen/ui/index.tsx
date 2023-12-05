@@ -9,7 +9,7 @@ import { Slide } from "react-awesome-reveal";
 
 export const AboutScreen = () => {
   return (
-    <div className="about-screen">
+    <div className="about-screen" id="about">
       <div className="container">
         <Slide></Slide>
         <h2 className="second-heading mt-8 mb-8">О компании Sun Grain</h2>

@@ -3,12 +3,17 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link, useNavigate } from "react-router-dom";
 import { Menu as DropMenu } from "@headlessui/react";
 import { Slide } from "react-awesome-reveal";
+import { useSelector } from "react-redux";
+import { useOpenMenu } from "@shared/lib/hooks/useOpenMenu";
 
 import "./styles.scss";
 
 export const Menu = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+
+  const isMenuOpen = useSelector((state: any) => state.menu.isOpen);
+  const closeMenu = useOpenMenu(isMenuOpen);
 
   function navigateTo(url: string) {
     navigate(url);
@@ -24,7 +29,12 @@ export const Menu = () => {
         <div className="menu flex flex-col items-end mt-16">
           <Slide direction="right" delay={100}>
             <div className="menu__links flex flex-col items-end mt-6">
-              <ScrollLink className="menu__links__link" to="main">
+              <ScrollLink
+                className="menu__links__link"
+                to="main"
+                onClick={closeMenu}
+                smooth
+              >
                 Главная
               </ScrollLink>
             </div>
@@ -141,14 +151,24 @@ export const Menu = () => {
           </div>
           <div className="menu__links flex flex-col items-end mt-6">
             <Slide direction="right" delay={400}>
-              <ScrollLink className="menu__links__link" to="catalogue">
+              <ScrollLink
+                className="menu__links__link"
+                to="about"
+                onClick={closeMenu}
+                smooth
+              >
                 О нас
               </ScrollLink>
             </Slide>
           </div>
           <div className="menu__links flex flex-col items-end mt-6">
             <Slide direction="right" delay={500}>
-              <ScrollLink className="menu__links__link" to="contacts">
+              <ScrollLink
+                className="menu__links__link"
+                to="contacts"
+                onClick={closeMenu}
+                smooth
+              >
                 Контакты
               </ScrollLink>
             </Slide>

@@ -4,6 +4,7 @@ import { Card } from "@features/Card/ui";
 import image from "@assets/images/flavor.webp";
 
 import "./styles.scss";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -12,7 +13,7 @@ import "swiper/css/scrollbar";
 export const Gallery = () => {
   return (
     <Swiper
-      className="swiper flex items-center justify-center mt-6 h-[66vh]"
+      className="swiper flex items-center justify-center mt-6 h-[75vh]"
       slidesPerView={1}
       spaceBetween={64}
       modules={[Pagination]}
