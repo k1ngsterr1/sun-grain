@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Menu as DropMenu } from "@headlessui/react";
 import { Slide } from "react-awesome-reveal";
 import { useSelector } from "react-redux";
@@ -9,15 +9,15 @@ import { useOpenMenu } from "@shared/lib/hooks/useOpenMenu";
 import "./styles.scss";
 
 export const Menu = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   const isMenuOpen = useSelector((state: any) => state.menu.isOpen);
   const closeMenu = useOpenMenu(isMenuOpen);
 
-  function navigateTo(url: string) {
-    navigate(url);
-  }
+  // function navigateTo(url: string) {
+  //   navigate(url);
+  // }
 
   function openCatalogue() {
     setIsOpen(!isOpen);
@@ -52,7 +52,7 @@ export const Menu = () => {
               <DropMenu.Items className={"flex flex-col items-end"}>
                 <Slide direction="right" className="mt-3">
                   <DropMenu.Item>
-                    {({ active }) => (
+                    {() => (
                       <Link
                         className={`menu__links__sub-link mt-3`}
                         to={"/catalogue"}
@@ -64,7 +64,7 @@ export const Menu = () => {
                 </Slide>
                 <Slide direction="right" className="mt-3">
                   <DropMenu.Item>
-                    {({ active }) => (
+                    {() => (
                       <Link
                         className={`menu__links__sub-link mt-2`}
                         to={"/catalogue"}
@@ -76,7 +76,7 @@ export const Menu = () => {
                 </Slide>
                 <Slide direction="right" className="mt-3">
                   <DropMenu.Item>
-                    {({ active }) => (
+                    {() => (
                       <Link
                         className={`menu__links__sub-link mt-2`}
                         to={"/catalogue"}
@@ -88,7 +88,7 @@ export const Menu = () => {
                 </Slide>
                 <Slide direction="right" className="mt-3">
                   <DropMenu.Item>
-                    {({ active }) => (
+                    {() => (
                       <Link
                         className={`menu__links__sub-link mt-2`}
                         to={"/catalogue"}
@@ -100,7 +100,7 @@ export const Menu = () => {
                 </Slide>
                 <Slide direction="right" className="mt-3">
                   <DropMenu.Item>
-                    {({ active }) => (
+                    {() => (
                       <Link
                         className={`menu__links__sub-link mt-2`}
                         to={"/catalogue"}
@@ -112,7 +112,7 @@ export const Menu = () => {
                 </Slide>
                 <Slide direction="right" className="mt-3">
                   <DropMenu.Item>
-                    {({ active }) => (
+                    {() => (
                       <Link
                         className={`menu__links__sub-link mt-2`}
                         to={"/catalogue"}
@@ -124,7 +124,7 @@ export const Menu = () => {
                 </Slide>
                 <Slide direction="right" className="mt-3">
                   <DropMenu.Item>
-                    {({ active }) => (
+                    {() => (
                       <Link
                         className={`menu__links__sub-link mt-2`}
                         to={"/catalogue"}
@@ -136,7 +136,7 @@ export const Menu = () => {
                 </Slide>
                 <Slide direction="right" className="mt-3">
                   <DropMenu.Item>
-                    {({ active }) => (
+                    {() => (
                       <Link
                         className={`menu__links__sub-link mt-2`}
                         to={"/catalogue"}

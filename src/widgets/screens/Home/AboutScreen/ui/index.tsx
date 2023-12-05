@@ -1,4 +1,3 @@
-import React from "react";
 import { Feature } from "@features/Feature";
 import { faMagento } from "@fortawesome/free-brands-svg-icons";
 
