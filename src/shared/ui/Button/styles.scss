@@ -3,6 +3,7 @@
   height: clamp(27px, 12.61656vw, 108px);
   color: #fff;
   font-family: Noto Sans;
+  border-radius: clamp(1px, 0.46728vw, 4px);
   font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
   font-style: normal;
   font-weight: 600;
@@ -12,7 +13,6 @@
 
 .filled {
   @extend .button;
-  border-radius: clamp(2px, 0.93456vw, 8px);
   border: none;
   outline: none;
   @apply text-custom-white;

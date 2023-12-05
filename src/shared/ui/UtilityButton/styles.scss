@@ -1,14 +1,15 @@
 .utility-btn {
   padding: clamp(6px, 2.80368vw, 24px);
+  border-radius: 4px;
   @apply text-custom-orange;
   transition: 0.3s all;
 
   &--filled {
     width: 80%;
+    border-radius: 4px;
     padding: clamp(6px, 2.80368vw, 24px);
     padding-left: clamp(12px, 5.60736vw, 48px);
     padding-right: clamp(12px, 5.60736vw, 48px);
-    border-radius: 4px;
     @apply text-white;
     @apply bg-custom-orange;
     transition: 0.3s all;
@@ -19,6 +20,7 @@
   }
 
   &--filled-no-width {
+    border-radius: 4px;
     padding: clamp(6px, 2.80368vw, 24px);
     padding-left: clamp(12px, 5.60736vw, 48px);
     padding-right: clamp(12px, 5.60736vw, 48px);
