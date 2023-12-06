@@ -2,3 +2,8 @@
   width: clamp(45px, 21.0276vw, 180px);
   height: clamp(45px, 21.0276vw, 180px);
 }
+
+.big {
+  width: clamp(70px, 32.709599999999995vw, 280px) !important;
+  height: clamp(70px, 32.709599999999995vw, 280px) !important;
+}
