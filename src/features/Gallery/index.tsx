@@ -13,7 +13,11 @@ import "swiper/css/scrollbar";
 export const Gallery = () => {
   return (
     <Swiper
+<<<<<<< HEAD
+      className="swiper flex items-center justify-center mt-6 h-[70vh]"
+=======
       className="swiper flex items-center justify-center mt-6 h-[75vh]"
+>>>>>>> e051637949ae747a9f69390f7e157f12ff8bf885
       slidesPerView={1}
       spaceBetween={64}
       modules={[Pagination]}
