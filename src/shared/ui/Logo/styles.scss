@@ -7,3 +7,10 @@
   width: clamp(70px, 32.709599999999995vw, 280px) !important;
   height: clamp(70px, 32.709599999999995vw, 280px) !important;
 }
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: clamp(60px, 6.2496vw, 240px);
+    height: clamp(60px, 6.2496vw, 240px);
+  }
+}
