@@ -6,6 +6,7 @@ import { MainScreen } from "@widgets/screens/Home/MainScreen/ui";
 import { AboutScreen } from "@widgets/screens/Home/AboutScreen/ui";
 import { CatalogueScreen } from "@widgets/screens/Home/CatalogueScreen/ui";
 import { FormScreen } from "@widgets/screens/Home/FormScreen/ui";
+import { Footer } from "@features/Footer/ui";
 
 export const HomePage = () => {
   const isLoading = useLoading(1200);
@@ -20,6 +21,7 @@ export const HomePage = () => {
       <AboutScreen />
       <CatalogueScreen />
       <FormScreen />
+      <Footer />
     </>
   );
 };

@@ -3,7 +3,11 @@ import logo from "@assets/images/logo.svg";
 
 import "./styles.scss";
 
-export const Logo = () => {
+interface LogoProps {
+  size: string;
+}
+
+export const Logo: React.FC<LogoProps> = ({ size }) => {
   const navigate = useNavigate();
 
   function scrollToTop() {
@@ -13,7 +17,12 @@ export const Logo = () => {
 
   return (
     <>
-      <img onClick={scrollToTop} src={logo} alt="logo" className="logo" />
+      <img
+        onClick={scrollToTop}
+        src={logo}
+        alt="logo"
+        className={`logo ${size}`}
+      />
     </>
   );
 };

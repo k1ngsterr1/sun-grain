@@ -64,9 +64,63 @@ p,
 
 .container {
   width: 90%;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   margin: auto;
   @apply mt-12;
+}
+
+.container-pc {
+  display: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: clamp(65px, 6.7704vw, 260px);
+    background: linear-gradient(180deg, #fcbf20, #e55b12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Noctura", sans-serif;
+  }
+
+  h2,
+  h3 {
+    @apply text-custom-black;
+    font-family: Noto Sans;
+    font-size: clamp(20px, 2.0832vw, 80px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: auto;
+  }
+
+  .paragraph-pc {
+    width: 60%;
+    @apply text-custom-black;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: clamp(11px, 1.1457600000000001vw, 44px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 155%; /* 38.75px */
+    margin: auto;
+  }
+
+  .paragraph {
+    font-size: clamp(10px, 1.0416vw, 40px);
+  }
+
+  .container {
+    display: none !important;
+  }
+
+  .container-pc {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    @apply mt-12;
+  }
 }

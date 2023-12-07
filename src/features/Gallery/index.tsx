@@ -11,41 +11,79 @@ import "swiper/css/scrollbar";
 
 export const Gallery = () => {
   return (
-    <Swiper
-      className="swiper flex items-center justify-center mt-6 h-[70vh]"
-      slidesPerView={1}
-      spaceBetween={64}
-      modules={[Pagination]}
-      pagination={{ clickable: true }}
-    >
-      <SwiperSlide className="swiper__slide">
-        <Card
-          text="Самая вкусная мука Sun Grain"
-          description="Лучшая мука в мире, покупайте у нас"
-          image={image}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="swiper__slide">
-        <Card
-          text="Самая вкусная мука Sun Grain"
-          description="Лучшая мука в мире, покупайте у нас"
-          image={image}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="swiper__slide">
-        <Card
-          text="Самая вкусная мука Sun Grain"
-          description="Лучшая мука в мире, покупайте у нас"
-          image={image}
-        />
-      </SwiperSlide>
-      <SwiperSlide className="swiper__slide">
-        <Card
-          text="Самая вкусная мука Sun Grain"
-          description="Лучшая мука в мире, покупайте у нас"
-          image={image}
-        />
-      </SwiperSlide>
-    </Swiper>
+    <>
+      <Swiper
+        className="swiper flex items-center justify-center mt-6 h-[70vh]"
+        slidesPerView={1}
+        spaceBetween={64}
+        modules={[Pagination]}
+        pagination={{ clickable: true }}
+      >
+        <SwiperSlide className="swiper__slide">
+          <Card
+            text="Самая вкусная мука Sun Grain"
+            description="Лучшая мука в мире, покупайте у нас"
+            image={image}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper__slide">
+          <Card
+            text="Самая вкусная мука Sun Grain"
+            description="Лучшая мука в мире, покупайте у нас"
+            image={image}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper__slide">
+          <Card
+            text="Самая вкусная мука Sun Grain"
+            description="Лучшая мука в мире, покупайте у нас"
+            image={image}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper__slide">
+          <Card
+            text="Самая вкусная мука Sun Grain"
+            description="Лучшая мука в мире, покупайте у нас"
+            image={image}
+          />
+        </SwiperSlide>
+      </Swiper>
+      <Swiper
+        className="swiper-pc flex items-center justify-center mt-1 h-[70vh]"
+        slidesPerView={4}
+        spaceBetween={64}
+        modules={[Pagination]}
+        pagination={{ clickable: true }}
+      >
+        <SwiperSlide className="swiper__slide">
+          <Card
+            text="Самая вкусная мука Sun Grain"
+            description="Лучшая мука в мире, покупайте у нас"
+            image={image}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper__slide">
+          <Card
+            text="Самая вкусная мука Sun Grain"
+            description="Лучшая мука в мире, покупайте у нас"
+            image={image}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper__slide">
+          <Card
+            text="Самая вкусная мука Sun Grain"
+            description="Лучшая мука в мире, покупайте у нас"
+            image={image}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper__slide">
+          <Card
+            text="Самая вкусная мука Sun Grain"
+            description="Лучшая мука в мире, покупайте у нас"
+            image={image}
+          />
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 };

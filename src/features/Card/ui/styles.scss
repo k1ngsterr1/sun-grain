@@ -24,7 +24,7 @@
   }
 
   &__text {
-    font-size: 23px;
+    font-size: clamp(11.5px, 5.37372vw, 46px);
     font-weight: 500;
     font-family: "Noto Sans", sans-serif;
     @apply text-center;
@@ -35,5 +35,49 @@
   &:hover {
     @apply shadow-xl;
     @apply bg-slate-100;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    position: relative;
+    width: clamp(150px, 15.624vw, 600px);
+    padding: clamp(10px, 1.0416vw, 40px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin: auto;
+    cursor: pointer;
+    @apply bg-gray-100;
+    @apply shadow-lg;
+
+    &__image {
+      width: 100%;
+      height: 200px;
+    }
+
+    &__description {
+      font-size: 16px;
+      opacity: 0.5;
+      @apply text-gray-700;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 20px;
+      font-weight: 500;
+      font-family: "Noto Sans", sans-serif;
+      @apply text-center;
+      @apply text-custom-black;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      @apply shadow-xl;
+      @apply bg-slate-100;
+    }
   }
 }

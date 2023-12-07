@@ -11,9 +11,9 @@ export const Form = () => {
         <Input placeholder="Ваш номер телефона" />
       </div>
       <div className="w-full flex justify-center mt-5">
-        <Input placeholder="Ваш почтовый адресс" />
+        <Input placeholder="Ваш электронный адрес" />
       </div>
-      <Button text="Отправить" buttonType="outline" margin="mt-8" />
+      <Button text="Отправить" buttonType="outline" margin="mt-8 mb-16" />
     </form>
   );
 };

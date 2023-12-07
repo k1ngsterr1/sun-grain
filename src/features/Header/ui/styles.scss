@@ -1,5 +1,55 @@
 .header {
   width: 90% !important;
   margin: auto;
+  display: flex !important;
   margin-top: clamp(16px, 7.47648vw, 64px);
+}
+
+.header-pc {
+  display: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    display: none !important;
+  }
+
+  .header-pc {
+    width: 86.6%;
+    height: auto;
+    display: flex !important;
+    margin: auto;
+    @apply mt-16;
+
+    &__navigation {
+      width: 100%;
+      &__link {
+        @apply text-custom-black;
+        font-family: Noto Sans;
+        font-size: clamp(10.5px, 1.09368vw, 42px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: 0.3s all;
+
+        &:hover {
+          @apply text-custom-orange;
+        }
+      }
+      &__contact-link {
+        font-family: Noto Sans;
+        font-size: clamp(10.5px, 1.09368vw, 42px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: var(
+          --gradient,
+          linear-gradient(181deg, #fcbf20 0.81%, #e55b12 127.81%)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
 }

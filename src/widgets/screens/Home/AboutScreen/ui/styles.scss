@@ -1,5 +1,23 @@
 .about-screen {
   width: 100%;
+  display: flex !important;
   height: auto;
   @apply bg-custom-orange;
 }
+
+.about-screen-pc {
+  display: none !important;
+}
+
+// @media screen and (min-width: 1024px) {
+//   .about-screen {
+//     display: none !important;
+//   }
+
+//   .about-screen-pc {
+//     width: 100%;
+//     display: flex !important;
+//     height: auto;
+//     @apply bg-custom-orange;
+//   }
+// }

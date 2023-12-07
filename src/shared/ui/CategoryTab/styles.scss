@@ -10,3 +10,18 @@
   @apply text-custom-orange;
   background-color: #f8c4a7;
 }
+
+@media screen and (min-width: 1024px) {
+  .category-tab {
+    position: absolute;
+    padding-top: clamp(3px, 0.31248vw, 12px);
+    padding-bottom: clamp(3px, 0.31248vw, 12px);
+    padding-left: clamp(8px, 0.83328vw, 32px);
+    padding-right: clamp(8px, 0.83328vw, 32px);
+    border-radius: clamp(10px, 1.0416vw, 40px);
+    top: clamp(14px, 1.45824vw, 56px);
+    right: clamp(14px, 1.45824vw, 56px);
+    @apply text-custom-orange;
+    background-color: #f8c4a7;
+  }
+}

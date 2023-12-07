@@ -27,7 +27,7 @@ export const Card: React.FC<CardProps> = ({
         <UtilityButton
           text="Категория"
           type="neutral mt-4"
-          width="20%"
+          width="100%"
           onClick={() => console.log("zhopa")}
         />
         <UtilityButton

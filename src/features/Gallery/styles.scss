@@ -5,3 +5,22 @@
 .swiper-pagination-bullet-active {
   @apply bg-custom-orange;
 }
+
+.swiper {
+  display: flex !important;
+}
+
+.swiper-pc {
+  display: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper {
+    display: none !important;
+  }
+
+  .swiper-pc {
+    width: 70% !important;
+    display: flex !important;
+  }
+}
