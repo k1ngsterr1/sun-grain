@@ -4,7 +4,7 @@ import logo from "@assets/images/logo.svg";
 import "./styles.scss";
 
 interface LogoProps {
-  size: string;
+  size?: string;
 }
 
 export const Logo: React.FC<LogoProps> = ({ size }) => {
