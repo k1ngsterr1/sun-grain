@@ -1,6 +1,6 @@
 import React from "react";
 import { UtilityButton } from "@shared/ui/UtilityButton";
-import { CategoryTab } from "@shared/ui/CategoryTab";
+// import { CategoryTab } from "@shared/ui/CategoryTab";
 
 import "./styles.scss";
 
