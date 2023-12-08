@@ -2,8 +2,6 @@ import { Gallery } from "@features/Gallery";
 import { Card } from "@features/Card/ui";
 import { Button } from "@shared/ui/Button";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
 // Assets
 import buckwheat from "@assets/images/cards/buckwheat.webp";
 import wheat from "@assets/images/cards/wheat.webp";
@@ -15,7 +13,7 @@ export const CatalogueScreen = () => {
   return (
     <>
       <div className="container">
-        <h2 className="second-heading mt-0 mb-8">Каталог</h2>
+        <h2 className="second-heading mt-0 mb-1">Каталог</h2>
         {/* <div className="w-full flex items-center justify-between">
           <Swiper
             className="swiper flex items-center justify-center mt-6 mb-12"
@@ -82,7 +80,7 @@ export const CatalogueScreen = () => {
         </div> */}
         <Gallery />
         <Button text="Весь каталог" margin="mt-8" buttonType="filledx" />
-      </div>{" "}
+      </div>
       <div className="container-pc">
         <h2 className="second-heading mt-0 mb-8">Каталог</h2>
         {/* <div className="w-full flex items-center justify-between">
