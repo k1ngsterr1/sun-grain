@@ -13,7 +13,7 @@ export const Feature: React.FC<FeatureProps> = ({ name, icon }) => {
   return (
     <div className={`feature flex flex-col items-center justify-center`}>
       <FontAwesomeIcon className="feature__icon" icon={icon} />
-      <span className="feature__text mt-4">{name}</span>
+      <span className="feature__text text-center  mt-4">{name}</span>
     </div>
   );
 };
