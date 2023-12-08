@@ -1,16 +1,22 @@
+import { Gallery } from "@features/Gallery";
 import { Card } from "@features/Card/ui";
-import { UtilityButton } from "@shared/ui/UtilityButton";
 import { Button } from "@shared/ui/Button";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import image from "@assets/images/flavor.webp";
+
+// Assets
+import buckwheat from "@assets/images/cards/buckwheat.webp";
+import wheat from "@assets/images/cards/wheat.webp";
+import cereal from "@assets/images/cards/cereals.webp";
+import flour from "@assets/images/cards/flour.webp";
+import peas from "@assets/images/cards/peas.webp";
 
 export const CatalogueScreen = () => {
   return (
     <>
       <div className="container">
         <h2 className="second-heading mt-0 mb-8">Каталог</h2>
-        <div className="w-full flex items-center justify-between">
+        {/* <div className="w-full flex items-center justify-between">
           <Swiper
             className="swiper flex items-center justify-center mt-6 mb-12"
             slidesPerView={3}
@@ -73,29 +79,13 @@ export const CatalogueScreen = () => {
               />
             </SwiperSlide>
           </Swiper>
-        </div>
-        <Card
-          text="Самая вкусная мука Sun Grain"
-          description="Лучшая мука в мире, покупайте у нас"
-          image={image}
-        />
-        <Card
-          text="Самая вкусная мука Sun Grain"
-          description="Лучшая мука в мире, покупайте у нас"
-          margin="mt-6"
-          image={image}
-        />
-        <Card
-          text="Самая вкусная мука Sun Grain"
-          description="Лучшая мука в мире, покупайте у нас"
-          margin="mt-6"
-          image={image}
-        />
+        </div> */}
+        <Gallery />
         <Button text="Весь каталог" margin="mt-8" buttonType="filledx" />
       </div>{" "}
       <div className="container-pc">
         <h2 className="second-heading mt-0 mb-8">Каталог</h2>
-        <div className="w-full flex items-center justify-between">
+        {/* <div className="w-full flex items-center justify-between">
           <Swiper
             className="swiper-pc flex items-center justify-center mt-6 mb-12"
             slidesPerView={5}
@@ -150,55 +140,65 @@ export const CatalogueScreen = () => {
               />
             </SwiperSlide>
           </Swiper>
-        </div>
+        </div> */}
         <div className="w-full flex items-center justify-between">
           <Card
-            text="Самая вкусная мука Sun Grain"
+            price="11.500₸"
+            text="Мука русское поле, 50кг"
+            // categoryText="Мука"
             description="Лучшая мука в мире, покупайте у нас"
-            image={image}
+            image={flour}
           />
           <Card
-            text="Самая вкусная мука Sun Grain"
+            price="7.500₸"
+            text="Гречка ядрица, 25кг"
+            // categoryText="Крупа"
             description="Лучшая мука в мире, покупайте у нас"
-            margin="mt-6"
-            image={image}
+            image={buckwheat}
           />
           <Card
-            text="Самая вкусная мука Sun Grain"
+            price="760₸"
+            text="Крупа гречневая ядрица 1 сорт, 0.8кг"
+            // categoryText="Крупа"
             description="Лучшая мука в мире, покупайте у нас"
-            margin="mt-6"
-            image={image}
+            image={buckwheat}
           />
           <Card
-            text="Самая вкусная мука Sun Grain"
+            price="500₸"
+            text="Горох шлифованный колотый, 0.8кг"
+            // categoryText="Горох"
             description="Лучшая мука в мире, покупайте у нас"
-            margin="mt-6"
-            image={image}
+            image={peas}
           />
         </div>
         <div className="w-full flex items-center justify-between mt-8">
           <Card
-            text="Самая вкусная мука Sun Grain"
+            price="550₸"
+            text="Горох шлифованный колотый, 0.8кг"
+            // categoryText="Горох"
             description="Лучшая мука в мире, покупайте у нас"
-            image={image}
+            image={peas}
           />
           <Card
-            text="Самая вкусная мука Sun Grain"
+            price="550₸"
+            text="Пшено шлифованное в/c, 0.8кг"
+            // categoryText="Пшено"
             description="Лучшая мука в мире, покупайте у нас"
-            margin="mt-6"
-            image={image}
+            image={wheat}
           />
           <Card
-            text="Самая вкусная мука Sun Grain"
+            price="500₸"
+            text="Крупа манная Марка М, 0.6кг"
+            // categoryText="Крупа"
             description="Лучшая мука в мире, покупайте у нас"
-            margin="mt-6"
-            image={image}
+            image={cereal}
           />
           <Card
-            text="Самая вкусная мука Sun Grain"
+            price="340₸"
+            text="Хлопья овсяные, 0.4кг"
+            // categoryText="Крупа"
             description="Лучшая мука в мире, покупайте у нас"
-            margin="mt-6"
-            image={image}
+            image={cereal}
           />
         </div>
         <Button text="Весь каталог" margin="mt-16" buttonType="filled" />
