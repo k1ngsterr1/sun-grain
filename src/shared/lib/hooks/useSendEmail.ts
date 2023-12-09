@@ -26,7 +26,7 @@ export function useSendEmail() {
     emailjs
       .sendForm(
         "service_zo7ktme",
-        "service_zo7ktme",
+        "template_wls321b",
         event?.target,
         "4JH0nukWpbbxqO4Tw"
       )
