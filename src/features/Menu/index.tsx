@@ -25,114 +25,11 @@ export const Menu = () => {
             </div>
           </Slide>
           <div className="menu__links flex flex-col items-end mt-6">
-            <DropMenu>
-              <Slide delay={300} direction="right">
-                <DropMenu.Button
-                  className={"menu__links__link"}
-                  onClick={openCatalogue}
-                >
-                  Каталог{" "}
-                </DropMenu.Button>
-              </Slide>
-              <DropMenu.Items className={"flex flex-col items-end"}>
-                <Slide direction="right" className="mt-3">
-                  <DropMenu.Item>
-                    {({}) => (
-                      <Link
-                        className={`menu__links__sub-link mt-3`}
-                        to={"/catalogue"}
-                      >
-                        Мука
-                      </Link>
-                    )}
-                  </DropMenu.Item>
-                </Slide>
-                <Slide direction="right" className="mt-3">
-                  <DropMenu.Item>
-                    {({}) => (
-                      <Link
-                        className={`menu__links__sub-link mt-2`}
-                        to={"/catalogue"}
-                      >
-                        Гречка
-                      </Link>
-                    )}
-                  </DropMenu.Item>
-                </Slide>
-                <Slide direction="right" className="mt-3">
-                  <DropMenu.Item>
-                    {({}) => (
-                      <Link
-                        className={`menu__links__sub-link mt-2`}
-                        to={"/catalogue"}
-                      >
-                        Крупа горох колотый
-                      </Link>
-                    )}
-                  </DropMenu.Item>
-                </Slide>
-                <Slide direction="right" className="mt-3">
-                  <DropMenu.Item>
-                    {({}) => (
-                      <Link
-                        className={`menu__links__sub-link mt-2`}
-                        to={"/catalogue"}
-                      >
-                        Отруби пшеничные
-                      </Link>
-                    )}
-                  </DropMenu.Item>
-                </Slide>
-                <Slide direction="right" className="mt-3">
-                  <DropMenu.Item>
-                    {({}) => (
-                      <Link
-                        className={`menu__links__sub-link mt-2`}
-                        to={"/catalogue"}
-                      >
-                        Крупо перловая
-                      </Link>
-                    )}
-                  </DropMenu.Item>
-                </Slide>
-                <Slide direction="right" className="mt-3">
-                  <DropMenu.Item>
-                    {({}) => (
-                      <Link
-                        className={`menu__links__sub-link mt-2`}
-                        to={"/catalogue"}
-                      >
-                        Крупа манная
-                      </Link>
-                    )}
-                  </DropMenu.Item>
-                </Slide>
-                <Slide direction="right" className="mt-3">
-                  <DropMenu.Item>
-                    {({}) => (
-                      <Link
-                        className={`menu__links__sub-link mt-2`}
-                        to={"/catalogue"}
-                      >
-                        Геркулес
-                      </Link>
-                    )}
-                  </DropMenu.Item>
-                </Slide>
-                <Slide direction="right" className="mt-3">
-                  <DropMenu.Item>
-                    {({}) => (
-                      <Link
-                        className={`menu__links__sub-link mt-2`}
-                        to={"/catalogue"}
-                      >
-                        Крупа ячневая
-                      </Link>
-                    )}
-                  </DropMenu.Item>
-                </Slide>
-              </DropMenu.Items>
-            </DropMenu>
+            <Slide delay={300} direction="right">
+              <Link className={"menu__links__link"} to="catalogue">
+                Каталог{" "}
+              </Link>
+            </Slide>
           </div>
           <div className="menu__links flex flex-col items-end mt-6">
             <Slide direction="right" delay={400}>
