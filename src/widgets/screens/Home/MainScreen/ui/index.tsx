@@ -1,5 +1,5 @@
 import { Header } from "@features/Header/ui";
-import { Button } from "@shared/ui/Button/";
+import { Button, LinkButton } from "@shared/ui/Button/";
 import { Slide } from "react-awesome-reveal";
 import { Menu } from "@features/Menu";
 import { RootState } from "@redux/store";
@@ -15,7 +15,7 @@ export const MainScreen = () => {
     <>
       <Header />
       {isMenuOpen && <Menu />}
-      <main className="container">
+      <main className="container" id="main-mob">
         <Slide triggerOnce>
           <h1>SUN GRAIN</h1>
         </Slide>
@@ -31,7 +31,7 @@ export const MainScreen = () => {
           <Button text="Вся продукция" margin="mt-10" buttonType="filled" />
         </Slide>
       </main>
-      <main className="container-pc">
+      <main className="container-pc" id="main">
         <Slide triggerOnce>
           <h1>SUN GRAIN</h1>
         </Slide>
@@ -44,7 +44,12 @@ export const MainScreen = () => {
           <Gallery />
         </Slide>
         <Slide direction="up" delay={500} triggerOnce>
-          <Button text="Вся продукция" margin="mt-10" buttonType="filled" />
+          <LinkButton
+            text="Вся продукция"
+            margin="mt-10"
+            buttonType="filled"
+            to="catalogue"
+          />
         </Slide>
       </main>
     </>

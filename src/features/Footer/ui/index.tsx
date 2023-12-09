@@ -48,13 +48,13 @@ export const Footer = () => {
           <Link to="main" className="footer__pc__nav__link">
             Наша продукция
           </Link>
-          <Link to="main" className="footer__pc__nav__link">
+          <Link to="about" className="footer__pc__nav__link">
             О компании
           </Link>
-          <Link to="main" className="footer__pc__nav__link">
+          <Link to="catalogue" className="footer__pc__nav__link">
             Каталог
           </Link>
-          <Link to="main" className="footer__pc__nav__link">
+          <Link to="contacts" className="footer__pc__nav__link">
             Контакты
           </Link>
           <a href="tel:+77066018826" className="footer__pc__nav__contact-link">

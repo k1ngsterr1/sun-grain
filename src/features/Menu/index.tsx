@@ -1,17 +1,14 @@
 import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
-import { Menu as DropMenu } from "@headlessui/react";
 import { Slide } from "react-awesome-reveal";
+import { useSelector } from "react-redux";
+import { useOpenMenu } from "@shared/lib/hooks/useOpenMenu";
 
 import "./styles.scss";
 
 export const Menu = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function openCatalogue() {
-    setIsOpen(!isOpen);
-  }
+  const isMenuOpen = useSelector((state: any) => state.menu.isOpen);
+  const closeMenu = useOpenMenu(isMenuOpen);
 
   return (
     <>
@@ -19,28 +16,48 @@ export const Menu = () => {
         <div className="menu flex flex-col items-end mt-16">
           <Slide direction="right" delay={100}>
             <div className="menu__links flex flex-col items-end mt-6">
-              <ScrollLink className="menu__links__link" to="main">
+              <ScrollLink
+                className="menu__links__link"
+                to="main-mob"
+                smooth
+                onClick={closeMenu}
+              >
                 Главная
               </ScrollLink>
             </div>
           </Slide>
           <div className="menu__links flex flex-col items-end mt-6">
             <Slide delay={300} direction="right">
-              <Link className={"menu__links__link"} to="catalogue">
-                Каталог{" "}
-              </Link>
+              <ScrollLink
+                className={"menu__links__link"}
+                to="catalogue-mob"
+                smooth
+                onClick={closeMenu}
+              >
+                Каталог
+              </ScrollLink>
             </Slide>
           </div>
           <div className="menu__links flex flex-col items-end mt-6">
             <Slide direction="right" delay={400}>
-              <ScrollLink className="menu__links__link" to="catalogue">
+              <ScrollLink
+                className="menu__links__link"
+                to="about-mob"
+                smooth
+                onClick={closeMenu}
+              >
                 О нас
               </ScrollLink>
             </Slide>
           </div>
           <div className="menu__links flex flex-col items-end mt-6">
             <Slide direction="right" delay={500}>
-              <ScrollLink className="menu__links__link" to="contacts">
+              <ScrollLink
+                className="menu__links__link"
+                to="form"
+                smooth
+                onClick={closeMenu}
+              >
                 Контакты
               </ScrollLink>
             </Slide>

@@ -15,7 +15,7 @@ export const AboutScreen = () => {
   return (
     <>
       <div className="about-screen mt-12">
-        <div className="container">
+        <div className="container" id="about-mob">
           <Slide triggerOnce>
             <h2 className="second-heading mt-8 mb-8">О компании Sun Grain</h2>
           </Slide>
@@ -61,7 +61,7 @@ export const AboutScreen = () => {
             />
           </Slide>
         </div>
-        <div className="container-pc">
+        <div className="container-pc" id="about">
           {" "}
           <Slide triggerOnce>
             <h2 className="second-heading mt-8 mb-8">О компании Sun Grain</h2>

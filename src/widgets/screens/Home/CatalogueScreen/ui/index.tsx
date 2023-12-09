@@ -28,7 +28,7 @@ export const CatalogueScreen = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container" id="catalogue-mob">
         <h2 className="second-heading mt-0 mb-1">Каталог</h2>
         {/* <div className="w-full flex items-center justify-between">
           <Swiper
@@ -97,7 +97,7 @@ export const CatalogueScreen = () => {
         <Gallery />
         {/* <Button text="Весь каталог" margin="mt-8" buttonType="filledx" /> */}
       </div>
-      <div className="container-pc">
+      <div className="container-pc" id="catalogue">
         <h2 className="second-heading mt-0 mb-8">Каталог</h2>
         {/* <div className="w-full flex items-center justify-between">
           <Swiper
@@ -271,7 +271,7 @@ export const CatalogueScreen = () => {
             image={cereal}
           />
         </div>
-        <Button text="Весь каталог" margin="mt-16" buttonType="filled" />
+        {/* <Button text="Весь каталог" margin="mt-16" buttonType="filled" /> */}
       </div>
     </>
   );
