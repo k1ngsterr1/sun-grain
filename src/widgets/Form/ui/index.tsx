@@ -7,7 +7,7 @@ export const Form = () => {
   const productFromRedux = useSelector(
     (state: any) => state.product.productState
   );
-  const { handleSubmit } = useSendEmail(productFromRedux);
+  const { handleSubmit } = useSendEmail();
 
   const onFormSubmit = (data: any) => {
     handleSubmit(data);
@@ -41,6 +41,9 @@ export const Form = () => {
           required
           name="email"
         />
+      </div>
+      <div className="w-full flex justify-center mt-5">
+        <Input value={productFromRedux || ""} type="hidden" name="product" />
       </div>
       <Button text="Отправить" buttonType="outline" margin="mt-8 mb-16" />
     </form>
