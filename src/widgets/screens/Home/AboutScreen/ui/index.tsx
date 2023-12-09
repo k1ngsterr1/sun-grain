@@ -34,26 +34,32 @@ export const AboutScreen = () => {
               и высшие стандарты качества.
             </p>
           </Slide>
-          <div className="w-full flex items-center justify-between gap-5 mt-8">
-            <Feature name="Гарантированное качество" icon={faStar} />
-            <Feature name="Разнообразие продукции" icon={faCartShopping} />
+          <div className="flex justify-between items-center gap-2 mt-8">
+            <Slide direction="left" triggerOnce>
+              <Feature name="Гарантированное качество" icon={faStar} />
+            </Slide>
+            <Slide direction="right" triggerOnce>
+              <Feature name="Разнообразие продукции" icon={faCartShopping} />
+            </Slide>
           </div>
-          <div className="w-full flex items-center justify-between gap-4 mt-5">
-            <Feature
-              name="Ответственность перед клиентами"
-              icon={faHandshake}
-            />
-            <Feature
-              name="Конкурентоспособные цены
-            "
-              icon={faMoneyBill}
-            />
+          <div className="flex justify-between items-center gap-2 mt-2">
+            <Slide direction="left" triggerOnce>
+              <Feature
+                name="Ответственность перед клиентами"
+                icon={faHandshake}
+              />
+            </Slide>
+            <Slide direction="right" triggerOnce>
+              <Feature name="Приемлемые цены" icon={faMoneyBill} />
+            </Slide>
           </div>
-          <img
-            src={about}
-            className="about-image mt-12 mb-8"
-            alt="about-image"
-          />
+          <Slide direction="left" triggerOnce>
+            <img
+              src={about}
+              className="about-image mt-12 mb-8"
+              alt="about-image"
+            />
+          </Slide>
         </div>
         <div className="container-pc">
           {" "}

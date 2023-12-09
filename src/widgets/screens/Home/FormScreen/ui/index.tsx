@@ -5,7 +5,7 @@ export const FormScreen = () => {
   return (
     <div className="form-screen flex flex-col items-center mt-12" id="form">
       <h3 className="pt-6 text-center">Контакты</h3>
-      <p className="paragraph mt-5 w-[40%]">
+      <p className="paragraph mt-5 w-[90%] min-[1024px]:w-[50%]">
         Если у Вас есть вопросы, предложения или Вы хотели бы сотрудничать с
         нами, свяжитесь с нашей командой. Мы всегда готовы предоставить Вам
         необходимую информацию и поддержку. Присоединяйтесь к SUN GRAIN и

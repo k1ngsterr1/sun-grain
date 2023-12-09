@@ -70,7 +70,7 @@ export const Footer = () => {
         <img
           src={logo}
           alt="logo"
-          className="footer__pc__nav__logo mt-10 mb-10"
+          className="footer__pc__nav__logo mt-10 mb-10 cursor-pointer"
           onClick={SparkStudio}
         />
       </div>

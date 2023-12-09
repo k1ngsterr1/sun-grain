@@ -7,12 +7,13 @@
   @apply shadow-lg;
 
   &__icon {
-    font-size: clamp(45px, 21.0276vw, 180px);
+    font-size: clamp(35px, 16.354799999999997vw, 140px);
     @apply text-custom-orange;
   }
 
   &__text {
-    font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+    text-align: center;
+    font-size: clamp(9px, 4.20552vw, 36px);
     @apply text-custom-black;
   }
 }
