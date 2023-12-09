@@ -1,12 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import menuReducer from "./menuSlice";
-// import popupReducer from "./popupSlice";
 import productReducer from "./productSlice";
+import popupReducer from "./popupSlice";
 
 export const store = configureStore({
   reducer: {
     menu: menuReducer,
     product: productReducer,
+    popup: popupReducer,
   },
   devTools: process.env.NODE_ENV !== "production",
 });
