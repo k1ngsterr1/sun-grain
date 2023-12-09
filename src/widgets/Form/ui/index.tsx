@@ -1,13 +1,16 @@
 import { useSendEmail } from "@shared/lib/hooks/useSendEmail";
 import { Button } from "@shared/ui/Button";
 import { Input } from "@shared/ui/Input";
+import { useSelector } from "react-redux";
 
 export const Form = () => {
-  const { handleSubmit } = useSendEmail();
+  const productFromRedux = useSelector(
+    (state: any) => state.product.productState
+  );
+  const { handleSubmit } = useSendEmail(productFromRedux);
 
   const onFormSubmit = (data: any) => {
     handleSubmit(data);
-    // setOpen((o) => !o);
   };
 
   return (

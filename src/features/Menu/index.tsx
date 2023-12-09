@@ -7,12 +7,7 @@ import { Slide } from "react-awesome-reveal";
 import "./styles.scss";
 
 export const Menu = () => {
-  // const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
-
-  // function navigateTo(url: string) {
-  //   navigate(url);
-  // }
 
   function openCatalogue() {
     setIsOpen(!isOpen);

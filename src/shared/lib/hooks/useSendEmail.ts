@@ -7,12 +7,11 @@ export interface SendFormData {
   email: string;
 }
 
-export function useSendEmail() {
+export function useSendEmail(productFromRedux: string) {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    setValue,
     reset,
   } = useForm<SendFormData>({
     mode: "onChange",
@@ -23,16 +22,21 @@ export function useSendEmail() {
       event.preventDefault();
     }
 
+    const formData = {
+      ...data,
+      product: productFromRedux,
+    };
+
     emailjs
-      .sendForm(
+      .send(
         "service_zo7ktme",
         "template_wls321b",
-        event?.target,
+        formData,
         "4JH0nukWpbbxqO4Tw"
       )
       .then(
-        (result) => {
-          console.log("Email successfully sent!", result.text);
+        (result: any) => {
+          console.log("Email successfully sent!", result.text, formData);
           reset();
         },
         (error) => {

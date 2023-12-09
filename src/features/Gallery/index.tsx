@@ -1,6 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Card } from "@features/Card/ui";
+import { useDispatch } from "react-redux";
+import { scroller } from "react-scroll";
+import { setProduct } from "@redux/productSlice";
 
 // Assets
 import buckwheat from "@assets/images/cards/buckwheat.webp";
@@ -17,6 +20,19 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export const Gallery = () => {
+  const dispatch = useDispatch();
+
+  const handleButtonClick = (newProductValue: string, elementId: string) => {
+    dispatch(setProduct(newProductValue));
+
+    scroller.scrollTo(elementId, {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+      offset: -50,
+    });
+  };
+
   return (
     <>
       <Swiper
@@ -31,6 +47,7 @@ export const Gallery = () => {
             price="11.500₸"
             text="Мука русское поле, 50кг"
             // categoryText="Мука"
+            onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={flour}
           />
@@ -40,6 +57,7 @@ export const Gallery = () => {
             price="7.500₸"
             text="Гречка ядрица, 25кг"
             // categoryText="Крупа"
+            onClick={() => handleButtonClick("Гречка ядрица, 25кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
@@ -49,6 +67,9 @@ export const Gallery = () => {
             price="760₸"
             text="Крупа гречневая ядрица 1 сорт, 0.8кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Крупа гречневая ядрица 1 сорт, 0.8кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
@@ -58,15 +79,9 @@ export const Gallery = () => {
             price="500₸"
             text="Горох шлифованный колотый, 0.8кг"
             // categoryText="Горох"
-            description="Лучшая мука в мире, покупайте у нас"
-            image={peas}
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
-          <Card
-            price="550₸"
-            text="Горох шлифованный колотый, 0.8кг"
-            // categoryText="Горох"
+            onClick={() =>
+              handleButtonClick("Горох шлифованный колотый, 0.8кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
@@ -77,6 +92,9 @@ export const Gallery = () => {
             text="Пшено шлифованное в/c, 0.8кг"
             // categoryText="Пшено"
             description="Лучшая мука в мире, покупайте у нас"
+            onClick={() =>
+              handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
+            }
             image={wheat}
           />
         </SwiperSlide>
@@ -85,6 +103,9 @@ export const Gallery = () => {
             price="500₸"
             text="Крупа манная Марка М, 0.6кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Крупа манная Марка М, 0.6кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
@@ -94,6 +115,7 @@ export const Gallery = () => {
             price="340₸"
             text="Хлопья овсяные, 0.4кг"
             // categoryText="Крупа"
+            onClick={() => handleButtonClick("Хлопья овсяные, 0.4кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
@@ -103,6 +125,7 @@ export const Gallery = () => {
             price="370₸"
             text="Хлопья 3 злака, 0.4кг"
             // categoryText="Крупа"
+            onClick={() => handleButtonClick("Хлопья 3 злака, 0.4кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
@@ -112,6 +135,7 @@ export const Gallery = () => {
             price="380₸"
             text="Хлопья 4 злака, 0.4кг"
             // categoryText="Крупа"
+            onClick={() => handleButtonClick("Хлопья 4 злака, 0.4кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
@@ -121,6 +145,9 @@ export const Gallery = () => {
             price="2.800₸"
             text="Крупа гречневая 1 сорт, 3кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Крупа гречневая 1 сорт, 3кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
@@ -130,6 +157,9 @@ export const Gallery = () => {
             price="1.800₸"
             text="Горох шлифованный колотый, 3кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Горох шлифованный колотый, 3кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
@@ -139,6 +169,9 @@ export const Gallery = () => {
             price="1.350₸"
             text="Хлопья овсяные Геркулес, 1.7кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Хлопья овсяные Геркулес, 1.7кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
@@ -156,6 +189,7 @@ export const Gallery = () => {
             price="11.500₸"
             text="Мука русское поле, 50кг"
             // categoryText="Мука"
+            onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={flour}
           />
@@ -165,6 +199,7 @@ export const Gallery = () => {
             price="7.500₸"
             text="Гречка ядрица, 25кг"
             // categoryText="Крупа"
+            onClick={() => handleButtonClick("Гречка ядрица, 25кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
@@ -174,6 +209,9 @@ export const Gallery = () => {
             price="760₸"
             text="Крупа гречневая ядрица 1 сорт, 0.8кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Крупа гречневая ядрица 1 сорт, 0.8кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
@@ -183,6 +221,9 @@ export const Gallery = () => {
             price="500₸"
             text="Горох шлифованный колотый, 0.8кг"
             // categoryText="Горох"
+            onClick={() =>
+              handleButtonClick("Горох шлифованный колотый, 0.8кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
@@ -192,6 +233,9 @@ export const Gallery = () => {
             price="550₸"
             text="Пшено шлифованное в/c, 0.8кг"
             // categoryText="Пшено"
+            onClick={() =>
+              handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={wheat}
           />
@@ -201,6 +245,9 @@ export const Gallery = () => {
             price="500₸"
             text="Крупа манная Марка М, 0.6кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
@@ -210,6 +257,7 @@ export const Gallery = () => {
             price="340₸"
             text="Хлопья овсяные, 0.4кг"
             // categoryText="Крупа"
+            onClick={() => handleButtonClick("Хлопья овсяные, 0.4кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
@@ -219,6 +267,7 @@ export const Gallery = () => {
             price="370₸"
             text="Хлопья 3 злака, 0.4кг"
             // categoryText="Крупа"
+            onClick={() => handleButtonClick("Хлопья 3 злака, 0.4кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
@@ -228,6 +277,7 @@ export const Gallery = () => {
             price="380₸"
             text="Хлопья 4 злака, 0.4кг"
             // categoryText="Крупа"
+            onClick={() => handleButtonClick("Хлопья 4 злака, 0.4кг", "form")}
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
@@ -237,6 +287,9 @@ export const Gallery = () => {
             price="2.800₸"
             text="Крупа гречневая 1 сорт, 3кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Крупа гречневая 1 сорт, 3кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
@@ -246,6 +299,9 @@ export const Gallery = () => {
             price="1.800₸"
             text="Горох шлифованный колотый, 3кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Горох шлифованный колотый, 3кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
@@ -255,6 +311,9 @@ export const Gallery = () => {
             price="1.350₸"
             text="Хлопья овсяные Геркулес, 1.7кг"
             // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Хлопья овсяные Геркулес, 1.7кг", "form")
+            }
             description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />

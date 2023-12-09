@@ -3,7 +3,7 @@ import "./styles.scss";
 
 export const FormScreen = () => {
   return (
-    <div className="form-screen flex flex-col items-center mt-12">
+    <div className="form-screen flex flex-col items-center mt-12" id="form">
       <h3 className="pt-6 text-center">Контакты</h3>
       <p className="paragraph mt-5 w-[40%]">
         Если у Вас есть вопросы, предложения или Вы хотели бы сотрудничать с

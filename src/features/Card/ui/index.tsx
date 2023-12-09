@@ -11,6 +11,7 @@ interface CardProps {
   description: string;
   margin?: string;
   price: string;
+  onClick: () => void;
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -20,6 +21,7 @@ export const Card: React.FC<CardProps> = ({
   description,
   margin,
   price,
+  onClick,
 }) => {
   return (
     <div className={`card ${margin}`}>
@@ -38,7 +40,7 @@ export const Card: React.FC<CardProps> = ({
           text={price}
           type="filled mt-4 ml-4"
           width="auto"
-          onClick={() => console.log("zhopa")}
+          onClick={onClick}
         />
       </div>
     </div>
