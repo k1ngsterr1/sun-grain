@@ -10,10 +10,10 @@ export const useOpenMenu = (isOpen: boolean) => {
   };
 
   useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    document.body.style.overflowY = isOpen ? "hidden" : "auto";
 
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflowY = "auto";
     };
   }, [isOpen]);
 

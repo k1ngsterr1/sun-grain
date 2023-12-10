@@ -4,8 +4,6 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { Slide } from "react-awesome-reveal";
 import Popup from "reactjs-popup";
 
-import { Button } from "@shared/ui/Button";
-
 import "./styles.scss";
 
 interface PopupProps {
