@@ -5,6 +5,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border-radius: 8px;
   transition: 0.3s;
@@ -43,9 +44,10 @@
     position: relative;
     width: clamp(150px, 15.624vw, 600px);
     padding: clamp(10px, 1.0416vw, 40px);
-    min-height: clamp(240px, 24.9984vw, 960px);
+    min-height: clamp(200px, 20.832vw, 800px);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     border-radius: 8px;
     transition: 0.3s;

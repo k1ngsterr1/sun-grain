@@ -45,16 +45,16 @@ export const Footer = () => {
       <div className="footer__pc flex items-center flex-col">
         <nav className="footer__pc__nav">
           <Logo size={"big"} />
-          <Link to="main" className="footer__pc__nav__link">
+          <Link to="main" className="footer__pc__nav__link" smooth>
             Наша продукция
           </Link>
-          <Link to="about" className="footer__pc__nav__link">
+          <Link to="about" className="footer__pc__nav__link" smooth>
             О компании
           </Link>
-          <Link to="catalogue" className="footer__pc__nav__link">
+          <Link to="catalogue" className="footer__pc__nav__link" smooth>
             Каталог
           </Link>
-          <Link to="contacts" className="footer__pc__nav__link">
+          <Link to="contacts" className="footer__pc__nav__link" smooth>
             Контакты
           </Link>
           <a href="tel:+77066018826" className="footer__pc__nav__contact-link">

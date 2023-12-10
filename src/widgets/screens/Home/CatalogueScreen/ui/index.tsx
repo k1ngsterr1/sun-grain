@@ -157,18 +157,18 @@ export const CatalogueScreen = () => {
         <div className="w-full flex items-center justify-between">
           <Card
             price="11.500₸"
-            text="Мука русское поле, 50кг"
+            text="Мука пшеничная русское поле, 50кг"
             // categoryText="Мука"
             onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={flour}
           />
           <Card
             price="7.500₸"
-            text="Гречка ядрица, 25кг"
+            text="Крупа гречневая ядрица, 25кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Гречка ядрица, 25кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
           <Card
@@ -178,7 +178,7 @@ export const CatalogueScreen = () => {
             onClick={() =>
               handleButtonClick("Крупа гречневая ядрица 1 сорт, 0.8кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
           <Card
@@ -188,7 +188,7 @@ export const CatalogueScreen = () => {
             onClick={() =>
               handleButtonClick("Горох шлифованный колотый, 0.8кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
         </div>
@@ -200,7 +200,7 @@ export const CatalogueScreen = () => {
             onClick={() =>
               handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
           <Card
@@ -210,7 +210,7 @@ export const CatalogueScreen = () => {
             onClick={() =>
               handleButtonClick("Крупа манная Марка М, 0.6кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={wheat}
           />
           <Card
@@ -218,7 +218,7 @@ export const CatalogueScreen = () => {
             text="Хлопья овсяные, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья овсяные, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
           <Card
@@ -226,7 +226,7 @@ export const CatalogueScreen = () => {
             text="Хлопья 3 злака, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 3 злака, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </div>
@@ -236,7 +236,7 @@ export const CatalogueScreen = () => {
             text="Хлопья 4 злака, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 4 злака, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
           <Card
@@ -246,7 +246,7 @@ export const CatalogueScreen = () => {
             onClick={() =>
               handleButtonClick("Крупа гречневая 1 сорт, 3кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
           <Card
@@ -256,7 +256,7 @@ export const CatalogueScreen = () => {
             onClick={() =>
               handleButtonClick("Горох шлифованный колотый, 3кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
           <Card
@@ -266,7 +266,7 @@ export const CatalogueScreen = () => {
             onClick={() =>
               handleButtonClick("Хлопья овсяные Геркулес, 1.7кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </div>

@@ -36,7 +36,7 @@ export const Gallery = () => {
   return (
     <>
       <Swiper
-        className="swiper flex items-center justify-center mt-6 h-[70vh]"
+        className="swiper flex items-center justify-center mt-6 h-[75vh]"
         slidesPerView={1}
         spaceBetween={64}
         modules={[Pagination]}
@@ -45,20 +45,20 @@ export const Gallery = () => {
         <SwiperSlide className="swiper__slide">
           <Card
             price="11.500₸"
-            text="Мука русское поле, 50кг"
+            text="Мука пшеничная русское поле, 50кг"
             // categoryText="Мука"
             onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={flour}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <Card
             price="7.500₸"
-            text="Гречка ядрица, 25кг"
+            text="Крупа гречневая ядрица, 25кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Гречка ядрица, 25кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
         </SwiperSlide>
@@ -70,7 +70,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Крупа гречневая ядрица 1 сорт, 0.8кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
         </SwiperSlide>
@@ -82,7 +82,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Горох шлифованный колотый, 0.8кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
         </SwiperSlide>
@@ -91,7 +91,7 @@ export const Gallery = () => {
             price="550₸"
             text="Пшено шлифованное в/c, 0.8кг"
             // categoryText="Пшено"
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             onClick={() =>
               handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
             }
@@ -106,7 +106,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Крупа манная Марка М, 0.6кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>
@@ -116,7 +116,7 @@ export const Gallery = () => {
             text="Хлопья овсяные, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья овсяные, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>
@@ -126,7 +126,7 @@ export const Gallery = () => {
             text="Хлопья 3 злака, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 3 злака, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>
@@ -136,7 +136,7 @@ export const Gallery = () => {
             text="Хлопья 4 злака, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 4 злака, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>
@@ -148,7 +148,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Крупа гречневая 1 сорт, 3кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
         </SwiperSlide>
@@ -160,7 +160,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Горох шлифованный колотый, 3кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
         </SwiperSlide>
@@ -172,7 +172,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Хлопья овсяные Геркулес, 1.7кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>
@@ -187,20 +187,20 @@ export const Gallery = () => {
         <SwiperSlide className="swiper__slide">
           <Card
             price="11.500₸"
-            text="Мука русское поле, 50кг"
+            text="Мука пшеничная русское поле, 50кг"
             // categoryText="Мука"
             onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={flour}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <Card
             price="7.500₸"
-            text="Гречка ядрица, 25кг"
+            text="Крупа гречнева ядрица, 25кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Гречка ядрица, 25кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
         </SwiperSlide>
@@ -212,7 +212,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Крупа гречневая ядрица 1 сорт, 0.8кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
         </SwiperSlide>
@@ -224,7 +224,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Горох шлифованный колотый, 0.8кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
         </SwiperSlide>
@@ -236,7 +236,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={wheat}
           />
         </SwiperSlide>
@@ -248,7 +248,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>
@@ -258,7 +258,7 @@ export const Gallery = () => {
             text="Хлопья овсяные, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья овсяные, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>
@@ -268,7 +268,7 @@ export const Gallery = () => {
             text="Хлопья 3 злака, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 3 злака, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>
@@ -278,7 +278,7 @@ export const Gallery = () => {
             text="Хлопья 4 злака, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 4 злака, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>
@@ -290,7 +290,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Крупа гречневая 1 сорт, 3кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
         </SwiperSlide>
@@ -302,7 +302,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Горох шлифованный колотый, 3кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={peas}
           />
         </SwiperSlide>
@@ -314,7 +314,7 @@ export const Gallery = () => {
             onClick={() =>
               handleButtonClick("Хлопья овсяные Геркулес, 1.7кг", "form")
             }
-            description="Лучшая мука в мире, покупайте у нас"
+            // description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
         </SwiperSlide>

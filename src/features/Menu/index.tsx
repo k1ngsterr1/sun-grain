@@ -13,7 +13,7 @@ export const Menu = () => {
     <>
       <Slide direction="right" className="z-10 absolute w-full h-full">
         <div className="menu flex flex-col items-end mt-16">
-          <Slide direction="right" delay={100}>
+          <Slide direction="right">
             <div className="menu__links flex flex-col items-end mt-6">
               <ScrollLink
                 className="menu__links__link"
@@ -26,7 +26,7 @@ export const Menu = () => {
             </div>
           </Slide>
           <div className="menu__links flex flex-col items-end mt-6">
-            <Slide delay={300} direction="right">
+            <Slide direction="right">
               <ScrollLink
                 className={"menu__links__link"}
                 to="catalogue-mob"
@@ -38,7 +38,7 @@ export const Menu = () => {
             </Slide>
           </div>
           <div className="menu__links flex flex-col items-end mt-6">
-            <Slide direction="right" delay={400}>
+            <Slide direction="right">
               <ScrollLink
                 className="menu__links__link"
                 to="about-mob"
@@ -50,7 +50,7 @@ export const Menu = () => {
             </Slide>
           </div>
           <div className="menu__links flex flex-col items-end mt-6">
-            <Slide direction="right" delay={500}>
+            <Slide direction="right">
               <ScrollLink
                 className="menu__links__link"
                 to="form"
@@ -61,12 +61,12 @@ export const Menu = () => {
               </ScrollLink>
             </Slide>
           </div>
-          <Slide direction="right" className="mt-6" delay={600}>
+          <Slide direction="right" className="mt-6">
             <a href="tel:+77066018826" className="menu__contact">
               +7 706 601 88-26
             </a>
           </Slide>
-          <Slide direction="right" className="mt-6" delay={700}>
+          <Slide direction="right" className="mt-6">
             <a href="mailto:ceo@sungrain.kz" className="menu__contact mt-4">
               ceo@sungrain.kz
             </a>

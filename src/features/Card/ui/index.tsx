@@ -8,7 +8,7 @@ interface CardProps {
   image: string;
   text: string;
   // categoryText: string;
-  description: string;
+  description?: string;
   margin?: string;
   price: string;
   onClick: () => void;
@@ -27,7 +27,7 @@ export const Card: React.FC<CardProps> = ({
     <div className={`card ${margin}`}>
       {/* <CategoryTab text={categoryText} /> */}
       <img src={image} className="card__image" alt="card-image" />
-      <span className="card__text w-[70%] mt-8">{text}</span>
+      <span className="card__text w-[90%] mt-8">{text}</span>
       <span className="card__description w-[90%] mt-2">{description}</span>
       <div className="w-full flex justify-center">
         {/* <UtilityButton
