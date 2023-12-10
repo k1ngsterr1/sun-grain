@@ -21,16 +21,16 @@ export const Header = () => {
       <header className="header-pc flex justify-between items-center">
         <nav className="header-pc__navigation flex justify-between items-center">
           <Logo />
-          <Link to="main" className="header-pc__navigation__link">
+          <Link to="main" className="header-pc__navigation__link" smooth>
             Наш каталог
           </Link>
-          <Link to="about" className="header-pc__navigation__link">
+          <Link to="about" className="header-pc__navigation__link" smooth>
             О компании
           </Link>
-          <Link to="catalogue" className="header-pc__navigation__link">
+          <Link to="catalogue" className="header-pc__navigation__link" smooth>
             Каталог
           </Link>
-          <Link to="contacts" className="header-pc__navigation__link">
+          <Link to="contacts" className="header-pc__navigation__link" smooth>
             Контакты
           </Link>
           <a
