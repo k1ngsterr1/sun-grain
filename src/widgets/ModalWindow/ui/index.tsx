@@ -30,13 +30,12 @@ export const ModalWindow: React.FC<PopupProps> = ({ open }) => {
                 icon={faCheck}
                 className="popup-container__modal__content__icon"
               />
-              <h1 className="popup-container__modal__content__heading mt-4">
+              <h5 className="popup-container__modal__content__heading mt-4">
                 Спасибо за вашу заявку!
-              </h1>
+              </h5>
               <p className="popup-container__modal__content__paragraph mt-4 w-[90%] text-center">
                 В скором времени мы с вами свяжемся
               </p>
-              <Button text="Закрыть" margin="mt-8" />
             </div>
           </div>
         </Slide>

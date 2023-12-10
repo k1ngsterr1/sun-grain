@@ -12,12 +12,13 @@ export const Form = () => {
 
   const isPopupOpen = useSelector((state: any) => state.popup.isOpen);
 
+  const openPopup = useOpenPopup();
   const { handleSubmit } = useSendEmail();
 
   const onFormSubmit = (data: any) => {
     handleSubmit(data);
-    useOpenPopup();
-    console.log(useOpenPopup, isPopupOpen);
+    openPopup();
+    console.log("popup:", openPopup, isPopupOpen);
   };
 
   return (
