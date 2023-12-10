@@ -32,6 +32,7 @@ export function useSendEmail() {
       .then(
         (result: any) => {
           console.log("Email successfully sent!", result.text);
+          data;
           reset();
         },
         (error) => {

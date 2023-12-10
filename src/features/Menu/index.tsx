@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Slide } from "react-awesome-reveal";
 import { useSelector } from "react-redux";
