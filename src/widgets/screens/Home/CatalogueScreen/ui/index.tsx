@@ -6,7 +6,7 @@ import { setProduct } from "@redux/productSlice";
 
 // Assets
 import buckwheat from "@assets/images/cards/buckwheat.webp";
-import wheat from "@assets/images/cards/wheat.webp";
+// import wheat from "@assets/images/cards/wheat.webp";
 import cereal from "@assets/images/cards/cereals.webp";
 import flour from "@assets/images/cards/flour.webp";
 import peas from "@assets/images/cards/peas.webp";
