@@ -30,7 +30,7 @@ export const Header = () => {
           <Link to="catalogue" className="header-pc__navigation__link" smooth>
             Каталог
           </Link>
-          <Link to="contacts" className="header-pc__navigation__link" smooth>
+          <Link to="form" className="header-pc__navigation__link" smooth>
             Контакты
           </Link>
           <a

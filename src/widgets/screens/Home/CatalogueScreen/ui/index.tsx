@@ -193,42 +193,42 @@ export const CatalogueScreen = () => {
           />
         </div>
         <div className="w-full flex items-center justify-between mt-8">
-          <Card
+          {/* <Card
             price="550₸"
             text="Горох шлифованный колотый, 0.8кг"
-            // categoryText="Горох"
+            categoryText="Горох"
             onClick={() =>
               handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
             }
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={peas}
-          />
-          <Card
+          /> */}
+          {/* <Card
             price="500₸"
             text="Крупа манная Марка М, 0.6кг"
-            // categoryText="Пшено"
+            categoryText="Пшено"
             onClick={() =>
               handleButtonClick("Крупа манная Марка М, 0.6кг", "form")
             }
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={wheat}
-          />
-          <Card
+          /> */}
+          {/* <Card
             price="340₸"
             text="Хлопья овсяные, 0.4кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья овсяные, 0.4кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
-          />
-          <Card
+          /> */}
+          {/* <Card
             price="370₸"
             text="Хлопья 3 злака, 0.4кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 3 злака, 0.4кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
-          />
+          /> */}
         </div>
         <div className="w-full flex items-center justify-between mt-8">
           <Card
@@ -236,7 +236,7 @@ export const CatalogueScreen = () => {
             text="Хлопья 4 злака, 0.4кг"
             // categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 4 злака, 0.4кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
           <Card

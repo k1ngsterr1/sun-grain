@@ -43,8 +43,8 @@
   .card {
     position: relative;
     width: clamp(150px, 15.624vw, 600px);
-    padding: clamp(10px, 1.0416vw, 40px);
-    height: clamp(225px, 23.436vw, 900px);
+    padding: clamp(12.5px, 1.302vw, 50px);
+    height: clamp(240px, 24.9984vw, 960px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,7 +58,7 @@
 
     &__image {
       width: 100%;
-      height: clamp(100px, 10.416vw, 400px);
+      height: clamp(125px, 13.02vw, 500px);
     }
 
     &__description {

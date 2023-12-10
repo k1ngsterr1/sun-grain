@@ -98,48 +98,48 @@ export const Gallery = () => {
             image={wheat}
           />
         </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
+        {/* <SwiperSlide className="swiper__slide">
           <Card
             price="500₸"
             text="Крупа манная Марка М, 0.6кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() =>
               handleButtonClick("Крупа манная Марка М, 0.6кг", "form")
             }
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
-        </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiper__slide">
           <Card
             price="340₸"
             text="Хлопья овсяные, 0.4кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья овсяные, 0.4кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
-        </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiper__slide">
           <Card
             price="370₸"
             text="Хлопья 3 злака, 0.4кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 3 злака, 0.4кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
-        </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiper__slide">
           <Card
             price="380₸"
             text="Хлопья 4 злака, 0.4кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 4 злака, 0.4кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide className="swiper__slide">
           <Card
             price="2.800₸"
@@ -228,60 +228,60 @@ export const Gallery = () => {
             image={peas}
           />
         </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
+        {/* <SwiperSlide className="swiper__slide">
           <Card
             price="550₸"
             text="Пшено шлифованное в/c, 0.8кг"
-            // categoryText="Пшено"
+            categoryText="Пшено"
             onClick={() =>
               handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
             }
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={wheat}
           />
-        </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiper__slide">
           <Card
             price="500₸"
             text="Крупа манная Марка М, 0.6кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() =>
               handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
             }
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
-        </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiper__slide">
           <Card
             price="340₸"
             text="Хлопья овсяные, 0.4кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья овсяные, 0.4кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
-        </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiper__slide">
           <Card
             price="370₸"
             text="Хлопья 3 злака, 0.4кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 3 злака, 0.4кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
-        </SwiperSlide>
-        <SwiperSlide className="swiper__slide">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="swiper__slide">
           <Card
             price="380₸"
             text="Хлопья 4 злака, 0.4кг"
-            // categoryText="Крупа"
+            categoryText="Крупа"
             onClick={() => handleButtonClick("Хлопья 4 злака, 0.4кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
+            description="Лучшая мука в мире, покупайте у нас"
             image={cereal}
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide className="swiper__slide">
           <Card
             price="2.800₸"
