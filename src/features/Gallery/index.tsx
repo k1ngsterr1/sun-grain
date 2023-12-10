@@ -36,7 +36,7 @@ export const Gallery = () => {
   return (
     <>
       <Swiper
-        className="swiper flex items-center justify-center mt-6 h-[75vh]"
+        className="swiper flex items-center justify-center mt-6 h-[80vh]"
         slidesPerView={1}
         spaceBetween={64}
         modules={[Pagination]}
@@ -45,7 +45,7 @@ export const Gallery = () => {
         <SwiperSlide className="swiper__slide">
           <Card
             price="11.500₸"
-            text="Мука пшеничная русское поле, 50кг"
+            text='Мука пшеничная в/c "русское поле," 50кг'
             // categoryText="Мука"
             onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
             // description="Лучшая мука в мире, покупайте у нас"
@@ -187,7 +187,7 @@ export const Gallery = () => {
         <SwiperSlide className="swiper__slide">
           <Card
             price="11.500₸"
-            text="Мука пшеничная русское поле, 50кг"
+            text='Мука пшеничная в/c "русское поле", 50кг'
             // categoryText="Мука"
             onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
             // description="Лучшая мука в мире, покупайте у нас"

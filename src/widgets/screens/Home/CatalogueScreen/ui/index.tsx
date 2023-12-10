@@ -157,7 +157,7 @@ export const CatalogueScreen = () => {
         <div className="w-full flex items-center justify-between">
           <Card
             price="11.500₸"
-            text="Мука пшеничная русское поле, 50кг"
+            text='Мука пшеничная в/c "русское поле", 50кг'
             // categoryText="Мука"
             onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
             // description="Лучшая мука в мире, покупайте у нас"
