@@ -3,13 +3,13 @@ import { Card } from "@features/Card/ui";
 import { scroller } from "react-scroll";
 import { useDispatch } from "react-redux";
 import { setProduct } from "@redux/productSlice";
+import { ProductBlock } from "@features/ProductBlock";
 
 // Assets
-import buckwheat from "@assets/images/cards/buckwheat.webp";
-// import wheat from "@assets/images/cards/wheat.webp";
-import cereal from "@assets/images/cards/cereals.webp";
 import flour from "@assets/images/cards/flour.webp";
-import peas from "@assets/images/cards/peas.webp";
+import flour02 from "@assets/images/cards/flour02.webp";
+import pizza_flour from "@assets/images/cards/pizza.webp";
+import buckwheat from "@assets/images/cards/buckwheat.webp";
 
 export const CatalogueScreen = () => {
   const dispatch = useDispatch();
@@ -29,248 +29,82 @@ export const CatalogueScreen = () => {
     <>
       <div className="container" id="catalogue-mob">
         <h2 className="second-heading mt-0 mb-1">Каталог</h2>
-        {/* <div className="w-full flex items-center justify-between">
-          <Swiper
-            className="swiper flex items-center justify-center mt-6 mb-12"
-            slidesPerView={3}
-            spaceBetween={64}
-          >
-            <SwiperSlide className="w-[100%]">
-              <UtilityButton
-                width="auto"
-                text="Мука"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-[100%]">
-              <UtilityButton
-                width="auto"
-                text="Пшено"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-full">
-              <UtilityButton
-                width="auto"
-                text="Зерно"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-full">
-              <UtilityButton
-                width="auto"
-                text="Зерно"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-full">
-              <UtilityButton
-                width="auto"
-                text="Зерно"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-full">
-              <UtilityButton
-                width="auto"
-                text="Зерно"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-full">
-              <UtilityButton
-                width="auto"
-                text="Зерно"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-          </Swiper>
-        </div> */}
         <Gallery />
-        {/* <Button text="Весь каталог" margin="mt-8" buttonType="filledx" /> */}
       </div>
       <div className="container-pc" id="catalogue">
         <h2 className="second-heading mt-0 mb-8">Каталог</h2>
-        {/* <div className="w-full flex items-center justify-between">
-          <Swiper
-            className="swiper-pc flex items-center justify-center mt-6 mb-12"
-            slidesPerView={5}
-            spaceBetween={32}
-          >
-            <SwiperSlide className="w-[50%]">
-              <UtilityButton
-                width="auto"
-                text="Мука"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-[50%]">
-              <UtilityButton
-                width="auto"
-                text="Пшено"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-[50%]">
-              <UtilityButton
-                width="auto"
-                text="Зерно"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-[50%]">
-              <UtilityButton
-                width="auto"
-                text="Зерно"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-[50%]">
-              <UtilityButton
-                width="auto"
-                text="Зерно"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="w-[50%]">
-              <UtilityButton
-                width="auto"
-                text="Зерно"
-                onClick={() => console.log("Мука")}
-                type="filled-no-width"
-              />
-            </SwiperSlide>
-          </Swiper>
-        </div> */}
-        <div className="w-full flex items-center justify-between">
-          <Card
-            price="11.500₸"
-            text='Мука пшеничная в/c "русское поле", 50кг'
-            // categoryText="Мука"
+        <div className="w-[86%] flex items-center justify-between">
+          <ProductBlock
+            blockHeading="Мука высший сорт"
+            productType=""
+            productName="Русское поле, 50кг"
+            productPhoto={flour}
+            details={[
+              { detailItem: "Цвет: Белый с кремовым оттенком" },
+              { detailItem: "Число падения: 240" },
+              { detailItem: "Белизна: 56 усл. ед." },
+              { detailItem: "Массовая доля влаги: 14.6%" },
+              { detailItem: "Клейковина: 28%" },
+              { detailItem: "ИДК: 70-75 ед." },
+            ]}
             onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
-            image={flour}
+            productPrice="11.500₸"
           />
-          <Card
-            price="7.500₸"
-            text="Крупа гречневая ядрица, 25кг"
-            // categoryText="Крупа"
-            onClick={() => handleButtonClick("Гречка ядрица, 25кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
-            image={buckwheat}
-          />
-          <Card
-            price="760₸"
-            text="Крупа гречневая ядрица 1 сорт, 0.8кг"
-            // categoryText="Крупа"
-            onClick={() =>
-              handleButtonClick("Крупа гречневая ядрица 1 сорт, 0.8кг", "form")
-            }
-            // description="Лучшая мука в мире, покупайте у нас"
-            image={buckwheat}
-          />
-          <Card
-            price="500₸"
-            text="Горох шлифованный колотый, 0.8кг"
-            // categoryText="Горох"
-            onClick={() =>
-              handleButtonClick("Горох шлифованный колотый, 0.8кг", "form")
-            }
-            // description="Лучшая мука в мире, покупайте у нас"
-            image={peas}
+          <ProductBlock
+            blockHeading="Мука высший сорт"
+            productType=""
+            productName="Крепчатка Золотая, 50кг"
+            productPhoto={flour02}
+            details={[
+              { detailItem: "Цвет: Белый с кремовым оттенком" },
+              { detailItem: "Число падения: 240" },
+              { detailItem: "Белизна: 60 усл. ед." },
+              { detailItem: "Массовая доля влаги: 14.8%" },
+              { detailItem: "Клейковина: 28-30%" },
+              { detailItem: "ИДК: 55-65 ед." },
+            ]}
+            onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
+            productPrice="14.500₸"
           />
         </div>
-        <div className="w-full flex items-center justify-between mt-8">
-          {/* <Card
-            price="550₸"
-            text="Горох шлифованный колотый, 0.8кг"
-            categoryText="Горох"
-            onClick={() =>
-              handleButtonClick("Пшено шлифованное в/c, 0.8кг", "form")
-            }
-            description="Лучшая мука в мире, покупайте у нас"
-            image={peas}
-          /> */}
-          {/* <Card
-            price="500₸"
-            text="Крупа манная Марка М, 0.6кг"
-            categoryText="Пшено"
-            onClick={() =>
-              handleButtonClick("Крупа манная Марка М, 0.6кг", "form")
-            }
-            description="Лучшая мука в мире, покупайте у нас"
-            image={wheat}
-          /> */}
-          {/* <Card
-            price="340₸"
-            text="Хлопья овсяные, 0.4кг"
-            categoryText="Крупа"
-            onClick={() => handleButtonClick("Хлопья овсяные, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
-            image={cereal}
-          /> */}
-          {/* <Card
-            price="370₸"
-            text="Хлопья 3 злака, 0.4кг"
-            categoryText="Крупа"
-            onClick={() => handleButtonClick("Хлопья 3 злака, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
-            image={cereal}
-          /> */}
-        </div>
-        <div className="w-full flex items-center justify-between mt-8">
-          <Card
-            price="380₸"
-            text="Хлопья 4 злака, 0.4кг"
-            // categoryText="Крупа"
-            onClick={() => handleButtonClick("Хлопья 4 злака, 0.4кг", "form")}
-            description="Лучшая мука в мире, покупайте у нас"
-            image={cereal}
+        <div className="w-[86%] flex items-center justify-between">
+          <ProductBlock
+            blockHeading="Мука для пиццы"
+            productType=""
+            productName="Крупчатка Золотая, 25кг"
+            productPhoto={pizza_flour}
+            details={[
+              { detailItem: "Цвет: Белый с кремовым оттенком" },
+              { detailItem: "Число падения: 270" },
+              { detailItem: "Белизна: 65 усл. ед." },
+              { detailItem: "Массовая доля влаги: 14.8%" },
+              { detailItem: "Клейковина: 28%" },
+              { detailItem: "ИДК: 55-60 ед." },
+              { detailItem: "W (энергия деформации): 320" },
+            ]}
+            onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
+            productPrice="10.000₸"
           />
-          <Card
-            price="2.800₸"
-            text="Крупа гречневая 1 сорт, 3кг"
-            // categoryText="Крупа"
+          <ProductBlock
+            blockHeading="Крупа Гречневая"
+            productType="Ядрица"
+            productName=""
+            productPhoto={buckwheat}
+            details={[
+              { detailItem: "Сорт: Первый" },
+              { detailItem: "Эн.Ценность (ккал): 335" },
+              { detailItem: "Белки: 12.6г." },
+              { detailItem: "Жиры: 3.3г" },
+              { detailItem: "Углеводы: 62.1г" },
+              { detailItem: "Срок хранения 20 мес." },
+              { detailItem: "Масса: 25кг" },
+            ]}
             onClick={() =>
-              handleButtonClick("Крупа гречневая 1 сорт, 3кг", "form")
+              handleButtonClick("Крупа Гречневая Ядрица, 25кг", "form")
             }
-            // description="Лучшая мука в мире, покупайте у нас"
-            image={buckwheat}
-          />
-          <Card
-            price="1.800₸"
-            text="Горох шлифованный колотый, 3кг"
-            // categoryText="Крупа"
-            onClick={() =>
-              handleButtonClick("Горох шлифованный колотый, 3кг", "form")
-            }
-            // description="Лучшая мука в мире, покупайте у нас"
-            image={peas}
-          />
-          <Card
-            price="1.350₸"
-            text="Хлопья овсяные Геркулес, 1.7кг"
-            // categoryText="Крупа"
-            onClick={() =>
-              handleButtonClick("Хлопья овсяные Геркулес, 1.7кг", "form")
-            }
-            // description="Лучшая мука в мире, покупайте у нас"
-            image={cereal}
+            productPrice="7.500₸"
           />
         </div>
-        {/* <Button text="Весь каталог" margin="mt-16" buttonType="filled" /> */}
       </div>
     </>
   );

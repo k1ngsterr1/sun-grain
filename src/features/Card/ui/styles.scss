@@ -24,6 +24,11 @@
     text-align: center;
   }
 
+  &__list-heading {
+    @apply text-gray-700;
+    text-align: center;
+  }
+
   &__text {
     font-size: clamp(11.5px, 5.37372vw, 46px);
     font-weight: 500;
@@ -42,9 +47,9 @@
 @media screen and (min-width: 1024px) {
   .card {
     position: relative;
-    width: clamp(150px, 15.624vw, 600px);
+    width: 350px;
     padding: clamp(12.5px, 1.302vw, 50px);
-    height: clamp(240px, 24.9984vw, 960px);
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,6 +64,7 @@
     &__image {
       width: 100%;
       height: clamp(125px, 13.02vw, 500px);
+      border-radius: 4px;
     }
 
     &__description {

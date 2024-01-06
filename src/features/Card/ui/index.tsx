@@ -7,7 +7,6 @@ import "./styles.scss";
 interface CardProps {
   image: string;
   text: string;
-  // categoryText: string;
   description?: string;
   margin?: string;
   price: string;
@@ -17,7 +16,6 @@ interface CardProps {
 export const Card: React.FC<CardProps> = ({
   image,
   text,
-  // categoryText,
   description,
   margin,
   price,
@@ -30,12 +28,6 @@ export const Card: React.FC<CardProps> = ({
       <span className="card__text w-[90%] mt-8">{text}</span>
       <span className="card__description w-[90%] mt-2">{description}</span>
       <div className="w-full flex justify-center">
-        {/* <UtilityButton
-          text="Категория"
-          type="neutral mt-4"
-          width="100%"
-          onClick={() => console.log("zhopa")}
-        /> */}
         <UtilityButton
           text={price}
           type="filled mt-4 ml-4"

@@ -1,0 +1,31 @@
+@media screen and (min-width: 1024px) {
+  .product-photo {
+    width: clamp(180px, 18.7488vw, 720px);
+    height: clamp(180px, 18.7488vw, 720px);
+  }
+
+  .product-section {
+    &__heading {
+      font-size: clamp(13.5px, 1.40616vw, 54px);
+      @apply text-custom-orange;
+      font-weight: 500;
+      font-family: "Noto Sans", sans-serif;
+    }
+    &__product-name {
+      font-size: clamp(11px, 1.1457600000000001vw, 44px);
+      @apply text-custom-black;
+      font-weight: 400;
+      font-family: "Noto Sans", sans-serif;
+    }
+
+    &__details-heading {
+      font-size: clamp(10px, 1.0416vw, 40px);
+      @apply text-custom-black;
+      font-weight: 500;
+    }
+
+    .detail-item {
+      font-size: clamp(9px, 0.93744vw, 36px);
+    }
+  }
+}
