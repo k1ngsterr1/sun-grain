@@ -27,13 +27,13 @@ export const ProductBlock: React.FC<ProductBlockProps> = ({
   onClick,
 }) => {
   return (
-    <section className="flex bg-slate-100 p-8  justify-between w-[47%] rounded-md mt-10">
+    <section className="flex bg-slate-100 p-8   w-[47%] rounded-md mt-10">
       <img
         src={productPhoto}
         className="product-photo rounded-md"
         alt={productName}
       />
-      <div className="product-section flex flex-col">
+      <div className="product-section flex flex-col ml-12">
         <span className="product-section__heading">{blockHeading}</span>
         <span className="product-section__product-name mt-3">
           {productType} {productName}
