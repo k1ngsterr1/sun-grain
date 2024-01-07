@@ -36,7 +36,7 @@ export const Gallery = () => {
   return (
     <>
       <Swiper
-        className="swiper flex items-center justify-center mt-6 h-[80vh]"
+        className="swiper flex items-center justify-center mt-6 h-[92vh]"
         slidesPerView={1}
         spaceBetween={64}
         modules={[Pagination]}
@@ -45,26 +45,51 @@ export const Gallery = () => {
         <SwiperSlide className="swiper__slide">
           <Card
             price="11.500₸"
-            text='Мука пшеничная в/c "Русское поле", 50кг'
+            text='Мука пшеничная "Русское поле", 50кг'
+            details={[
+              { detailItem: "Цвет: Белый с кремовым оттенком" },
+              { detailItem: "Число падения: 240" },
+              { detailItem: "Белизна: 56 усл. ед." },
+              { detailItem: "Массовая доля влаги: 14.6%" },
+              { detailItem: "Клейковина: 28%" },
+              { detailItem: "ИДК: 70-75 ед." },
+            ]}
             onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
             image={flour}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <Card
-            price="7.500₸"
-            text="Крупа гречневая ядрица, 25кг"
+            price="14.500₸"
+            text='Мука пшеничная "Крепчатка Золотая", 50кг'
+            details={[
+              { detailItem: "Цвет: Белый с кремовым оттенком" },
+              { detailItem: "Число падения: 240" },
+              { detailItem: "Белизна: 60 усл. ед." },
+              { detailItem: "Массовая доля влаги: 14.8%" },
+              { detailItem: "Клейковина: 28-30%" },
+              { detailItem: "ИДК: 55-65 ед." },
+            ]}
             onClick={() => handleButtonClick("Гречка ядрица, 25кг", "form")}
             image={buckwheat}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <Card
-            price="760₸"
-            text="Крупа гречневая ядрица 1 сорт, 0.8кг"
+            price="10.000₸"
+            text="Мука 'Крупчатка Золотая', 25кг"
+            details={[
+              { detailItem: "Цвет: Белый с кремовым оттенком" },
+              { detailItem: "Число падения: 270" },
+              { detailItem: "Белизна: 65 усл. ед." },
+              { detailItem: "Массовая доля влаги: 14.8%" },
+              { detailItem: "Клейковина: 28%" },
+              { detailItem: "ИДК: 55-60 ед." },
+              { detailItem: "W (энергия деформации): 320" },
+            ]}
             // categoryText="Крупа"
             onClick={() =>
-              handleButtonClick("Крупа гречневая ядрица 1 сорт, 0.8кг", "form")
+              handleButtonClick("Мука крупчатка золотая, 25кг", "form")
             }
             // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
@@ -72,10 +97,19 @@ export const Gallery = () => {
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <Card
-            price="2.800₸"
-            text="Крупа гречневая 1 сорт, 3кг"
+            price="7.500₸"
+            text="Крупа гречневая 1 сорт, 25кг"
+            details={[
+              { detailItem: "Сорт: Первый" },
+              { detailItem: "Эн.Ценность (ккал): 335" },
+              { detailItem: "Белки: 12.6г." },
+              { detailItem: "Жиры: 3.3г" },
+              { detailItem: "Углеводы: 62.1г" },
+              { detailItem: "Срок хранения 20 мес." },
+              { detailItem: "Масса: 25кг" },
+            ]}
             onClick={() =>
-              handleButtonClick("Крупа гречневая 1 сорт, 3кг", "form")
+              handleButtonClick("Крупа Гречневая Ядрица, 25кг", "form")
             }
             image={buckwheat}
           />
@@ -91,45 +125,72 @@ export const Gallery = () => {
         <SwiperSlide className="swiper__slide">
           <Card
             price="11.500₸"
-            text='Мука пшеничная в/c "Русское поле", 50кг'
-            // categoryText="Мука"
+            text='Мука пшеничная "Русское поле", 50кг'
+            details={[
+              { detailItem: "Цвет: Белый с кремовым оттенком" },
+              { detailItem: "Число падения: 240" },
+              { detailItem: "Белизна: 56 усл. ед." },
+              { detailItem: "Массовая доля влаги: 14.6%" },
+              { detailItem: "Клейковина: 28%" },
+              { detailItem: "ИДК: 70-75 ед." },
+            ]}
             onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
-            // description="Лучшая мука в мире, покупайте у нас"
             image={flour}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <Card
-            price="7.500₸"
-            text="Крупа гречнева ядрица, 25кг"
-            // categoryText="Крупа"
+            price="14.500₸"
+            text='Мука пшеничная "Крепчатка Золотая", 50кг'
+            details={[
+              { detailItem: "Цвет: Белый с кремовым оттенком" },
+              { detailItem: "Число падения: 240" },
+              { detailItem: "Белизна: 60 усл. ед." },
+              { detailItem: "Массовая доля влаги: 14.8%" },
+              { detailItem: "Клейковина: 28-30%" },
+              { detailItem: "ИДК: 55-65 ед." },
+            ]}
             onClick={() => handleButtonClick("Гречка ядрица, 25кг", "form")}
+            image={buckwheat}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper__slide">
+          <Card
+            price="10.000₸"
+            text="Мука 'Крупчатка Золотая', 25кг"
+            details={[
+              { detailItem: "Цвет: Белый с кремовым оттенком" },
+              { detailItem: "Число падения: 270" },
+              { detailItem: "Белизна: 65 усл. ед." },
+              { detailItem: "Массовая доля влаги: 14.8%" },
+              { detailItem: "Клейковина: 28%" },
+              { detailItem: "ИДК: 55-60 ед." },
+              { detailItem: "W (энергия деформации): 320" },
+            ]}
+            // categoryText="Крупа"
+            onClick={() =>
+              handleButtonClick("Мука крупчатка золотая, 25кг", "form")
+            }
             // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <Card
-            price="760₸"
-            text="Крупа гречневая ядрица 1 сорт, 0.8кг"
-            // categoryText="Крупа"
+            price="7.500₸"
+            text="Крупа гречневая 1 сорт, 25кг"
+            details={[
+              { detailItem: "Сорт: Первый" },
+              { detailItem: "Эн.Ценность (ккал): 335" },
+              { detailItem: "Белки: 12.6г." },
+              { detailItem: "Жиры: 3.3г" },
+              { detailItem: "Углеводы: 62.1г" },
+              { detailItem: "Срок хранения 20 мес." },
+              { detailItem: "Масса: 25кг" },
+            ]}
             onClick={() =>
-              handleButtonClick("Крупа гречневая ядрица 1 сорт, 0.8кг", "form")
+              handleButtonClick("Крупа Гречневая Ядрица, 25кг", "form")
             }
-            // description="Лучшая мука в мире, покупайте у нас"
-            image={buckwheat}
-          />
-        </SwiperSlide>
-
-        <SwiperSlide className="swiper__slide">
-          <Card
-            price="2.800₸"
-            text="Крупа гречневая 1 сорт, 3кг"
-            // categoryText="Крупа"
-            onClick={() =>
-              handleButtonClick("Крупа гречневая 1 сорт, 3кг", "form")
-            }
-            // description="Лучшая мука в мире, покупайте у нас"
             image={buckwheat}
           />
         </SwiperSlide>

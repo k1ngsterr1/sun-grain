@@ -63,7 +63,9 @@ export const CatalogueScreen = () => {
               { detailItem: "Клейковина: 28-30%" },
               { detailItem: "ИДК: 55-65 ед." },
             ]}
-            onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
+            onClick={() =>
+              handleButtonClick("Мука Крепчатка Золотая, 50кг", "form")
+            }
             productPrice="14.500₸"
           />
         </div>
@@ -82,7 +84,9 @@ export const CatalogueScreen = () => {
               { detailItem: "ИДК: 55-60 ед." },
               { detailItem: "W (энергия деформации): 320" },
             ]}
-            onClick={() => handleButtonClick("Мука русское поле, 50кг", "form")}
+            onClick={() =>
+              handleButtonClick("Мука крупчатка золотая, 25кг", "form")
+            }
             productPrice="10.000₸"
           />
           <ProductBlock
