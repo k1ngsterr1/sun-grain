@@ -36,7 +36,7 @@ export const Gallery = () => {
   return (
     <>
       <Swiper
-        className="swiper flex items-center justify-center mt-6 h-[120vh]"
+        className="swiper flex items-center justify-center mt-6 h-[105vh]"
         slidesPerView={1}
         spaceBetween={64}
         modules={[Pagination]}
