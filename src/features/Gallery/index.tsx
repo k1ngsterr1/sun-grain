@@ -71,13 +71,13 @@ export const Gallery = () => {
               { detailItem: "ИДК: 55-65 ед." },
             ]}
             onClick={() => handleButtonClick("Гречка ядрица, 25кг", "form")}
-            image={buckwheat}
+            image={flour02}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
           <Card
             price="10.000₸"
-            text="Мука 'Крупчатка Золотая', 25кг"
+            text="Мука для пиццы 'Крупчатка Золотая', 25кг"
             details={[
               { detailItem: "Цвет: Белый с кремовым оттенком" },
               { detailItem: "Число падения: 270" },
@@ -89,10 +89,13 @@ export const Gallery = () => {
             ]}
             // categoryText="Крупа"
             onClick={() =>
-              handleButtonClick("Мука крупчатка золотая, 25кг", "form")
+              handleButtonClick(
+                "Мука крупчатка золотая для пиццы, 25кг",
+                "form"
+              )
             }
             // description="Лучшая мука в мире, покупайте у нас"
-            image={buckwheat}
+            image={pizza_flour}
           />
         </SwiperSlide>
         <SwiperSlide className="swiper__slide">
