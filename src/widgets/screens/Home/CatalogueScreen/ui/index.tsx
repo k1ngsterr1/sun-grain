@@ -1,5 +1,4 @@
 import { Gallery } from "@features/Gallery";
-import { Card } from "@features/Card/ui";
 import { scroller } from "react-scroll";
 import { useDispatch } from "react-redux";
 import { setProduct } from "@redux/productSlice";
