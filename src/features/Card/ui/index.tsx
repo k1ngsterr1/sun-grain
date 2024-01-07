@@ -30,7 +30,7 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div className={`card ${margin}`}>
       {/* <CategoryTab text={categoryText} /> */}
-      <img src={image} className="card__image" alt="card-image" />
+      <img src={image} className="card__image rounded-md" alt="card-image" />
       <span className="card__text w-[90%] mt-8">{text}</span>
       <span className="card__description w-[90%] mt-2">{description}</span>
       <strong className="card__details-heading mt-2">Характеристики:</strong>

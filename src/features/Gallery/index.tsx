@@ -9,7 +9,7 @@ import { setProduct } from "@redux/productSlice";
 import buckwheat from "@assets/images/cards/buckwheat.webp";
 import flour from "@assets/images/cards/flour.webp";
 import flour02 from "@assets/images/cards/flour02.webp";
-import pizza_flour from "@assets/images/cards/pizza.webp";
+import pizza_flour from "@assets/images/cards/pizza_flour.webp";
 
 import "./styles.scss";
 
@@ -36,7 +36,7 @@ export const Gallery = () => {
   return (
     <>
       <Swiper
-        className="swiper flex items-center justify-center mt-6 h-[92vh]"
+        className="swiper flex items-center justify-center mt-6 h-[100vh]"
         slidesPerView={1}
         spaceBetween={64}
         modules={[Pagination]}
